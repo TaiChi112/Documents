@@ -1,0 +1,48 @@
+**Understanding the Problem**
+
+- Read the problem statement carefully.
+- Identify the input and output formats.
+- Understand the constraints.
+- Ask clarifying questions if needed.
+- Break down the problem into smaller parts.
+- Identify the key points and edge cases.
+- Draw diagrams or write down examples to understand the problem better.
+- Try to solve the problem manually with a few examples.
+- Try to find a pattern or a formula.
+- Try to find a brute force solution.
+- Try to optimize the brute force solution.
+- Try to find a better algorithm.
+- Try to implement the algorithm in code.
+- Test the code with different test cases.
+- Debug the code if needed.
+- Optimize the code if needed.
+- Submit the code.
+- Learn from the solution.
+- Practice more problems.
+- Review the problem-solving process.
+- Improve the problem-solving skills.
+- Learn from others.
+- Teach others.
+- Practice regularly.
+- Be patient and persistent.
+- Have fun and enjoy the process.
+- Be creative and innovative.
+- Be open-minded and flexible.
+- Be curious and inquisitive.
+- Be persistent and determined.
+- Be patient and calm.
+- Be positive and optimistic.
+- Be confident and self-assured.
+- Be humble and modest.
+- Be respectful and considerate.
+- Be responsible and accountable.
+- Be ethical and honest.
+- Be fair and just.
+- Be loyal and faithful.
+- Be courageous and brave.
+- Be kind and compassionate.
+- Be generous and giving.
+- Be wise and intelligent.
+- Be creative and innovative.
+- Be open-minded and flexible.
+- Be curious and inquisitive.
