@@ -2,18 +2,35 @@
 - จาก DFA model || state diagram 
   - eq.
 ```mermaid
-stateDiagram-v2
+stateDiagram
     [*] --> q0
-    q0 --> q1 : 0
-    q0 --> qr : 1
-    q1 --> q2 : 0
-    q1 --> qr : 1
-    q2 --> q3 : 1
-    q2 --> qr : 0
-    q3 --> q3 : 0,1
-    qr --> qr : 0,1
+    q0 --> q1 : a
+    q0 --> dead : b
 
-    state q3 <<accept>>
+    q1 --> q2 : a
+    q1 --> dead : b
+
+    q2 --> q3 : b
+    q2 --> dead : a
+
+    %% กลาง: รับอะไรก็ได้หลัง aab
+    q3 --> q4 : a
+    q3 --> q4 : b
+
+    %% Sliding window 3 ตัวสุดท้าย
+    q4 --> q4 : a
+    q4 --> q5 : b
+
+    q5 --> q6 : a
+    q5 --> q4 : b
+
+    q6 --> q4 : a
+    q6 --> q5 : b
+
+    q6 --> [*] : Accept (ถ้าสิ้นสุดที่ q6)
+
+    dead --> dead : a,b
+
 ```
 
 - จาก DFA model || state diagram ข้างต้น จะมี string ให้เเล้วทำการ check ว่า string ที่กำหนดให้สามารถยอมรับได้กับ DFA mode || state diagram ข้างต้นไหม
