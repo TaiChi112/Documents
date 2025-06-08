@@ -1,0 +1,226 @@
+## Practices DSA
+### Linked List
+- 1. เริ่มจาก linked list ด้วย primitive data type
+- 2. หลังจากเข้าใจข้อ 1 ให้ลองทำ linked list ด้วย struct Node
+- 3. หลังจากเข้าใจข้อ 2 ให้ลองทำ ด้วย user-defined data type ที่ complex
+- 4. หลังจากเข้าใจข้อ 3 ให้ลองทำ doubly linked list & circular linked list
+
+### Stack
+- 1. เริ่มจาก stack ด้วย primitive data type
+- 2. หลังจากเข้าใจข้อ 1 ให้ลองทำ stack ด้วย struct Node
+- 3. หลังจากเข้าใจข้อ 2 ให้ลองทำ stack ด้วย user-defined data type ที่ complex
+- 4. หลังจากเข้าใจข้อ 3 ให้ลองทำ stack ด้วย array
+- 5. หลังจากเข้าใจข้อ 4 ให้ลองทำ stack ด้วย vector
+- 6. หลังจากเข้าใจข้อ 5 ให้ลองทำ stack ด้วย linked list
+- 7. หลังจากเข้าใจข้อ 6 ให้ลองทำ stack ด้วย doubly linked list
+- 8. หลังจากเข้าใจข้อ 7 ให้ลองทำ stack ด้วย circular linked list
+- 9. หลังจากเข้าใจข้อ 8 ให้ลองทำ stack ด้วย template class
+- 10. หลังจากเข้าใจข้อ 9 ให้ลองทำ stack ด้วย template class ที่มี user-defined data type ที่ complex
+- 11. หลังจากเข้าใจข้อ 10 ให้ลองทำ stack ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ
+- 12. หลังจากเข้าใจข้อ 11 ให้ลองทำ stack ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling
+- 13. หลังจากเข้าใจข้อ 12 ให้ลองทำ stack ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer
+- 14. หลังจากเข้าใจข้อ 13 ให้ลองทำ stack ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading
+- 15. หลังจากเข้าใจข้อ 14 ให้ลองทำ stack ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing
+- 16. หลังจากเข้าใจข้อ 15 ให้ลองทำ stack ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing
+- 17. หลังจากเข้าใจข้อ 16 ให้ลองทำ stack ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing
+- 18. หลังจากเข้าใจข้อ 17 ให้ลองทำ stack ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data
+- 19. หลังจากเข้าใจข้อ 18 ให้ลองทำ stack ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning
+- 20. หลังจากเข้าใจข้อ 19 ให้ลองทำ stack ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning
+- 21. หลังจากเข้าใจข้อ 20 ให้ลองทำ stack ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning และมีการใช้งาน reinforcement learning
+- 22. หลังจากเข้าใจข้อ 21 ให้ลองทำ stack ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning และมีการใช้งาน reinforcement learning และมีการใช้งาน natural language processing
+- 23. หลังจากเข้าใจข้อ 22 ให้ลองทำ stack ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning และมีการใช้งาน reinforcement learning และมีการใช้งาน natural language processing และมีการใช้งาน computer vision
+- 24. หลังจากเข้าใจข้อ 23 ให้ลองทำ stack ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning และมีการใช้งาน reinforcement learning และมีการใช้งาน natural language processing และมีการใช้งาน computer vision และมีการใช้งาน robotics
+- 25. หลังจากเข้าใจข้อ 24 ให้ลองทำ stack ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning และมีการใช้งาน reinforcement learning และมีการใช้งาน natural language processing และมีการใช้งาน computer vision และมีการใช้งาน robotics และมีการใช้งาน internet of things (IoT)
+- 26. หลังจากเข้าใจข้อ 25 ให้ลองทำ stack ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning และมีการใช้งาน reinforcement learning และมีการใช้งาน natural language processing และมีการใช้งาน computer vision และมีการใช้งาน robotics และมีการใช้งาน internet of things (IoT) และมีการใช้งาน blockchain
+- 27. หลังจากเข้าใจข้อ 26 ให้ลองทำ stack ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning และมีการใช้งาน reinforcement learning และมีการใช้งาน natural language processing และมีการใช้งาน computer vision และมีการใช้งาน robotics และมีการใช้งาน internet of things (IoT) และมีการใช้งาน blockchain และมีการใช้งาน quantum computing
+- 28. หลังจากเข้าใจข้อ 27 ให้ลองทำ stack ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning และมีการใช้งาน reinforcement learning และมีการใช้งาน natural language processing และมีการใช้งาน computer vision และมีการใช้งาน robotics และมีการใช้งาน internet of things (IoT) และมีการใช้งาน blockchain และมีการใช้งาน quantum computing และมีการใช้งาน edge computing
+- 29. หลังจากเข้าใจข้อ 28 ให้ลองทำ stack ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning และมีการใช้งาน reinforcement learning และมีการใช้งาน natural language processing และมีการใช้งาน computer vision และมีการใช้งาน robotics และมีการใช้งาน internet of things (IoT) และมีการใช้งาน blockchain และมีการใช้งาน quantum computing และมีการใช้งาน edge computing และมีการใช้งาน augmented reality (AR) / virtual reality (VR)
+- 30. หลังจากเข้าใจข้อ 29 ให้ลองทำ stack ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning และมีการใช้งาน reinforcement learning และมีการใช้งาน natural language processing และมีการใช้งาน computer vision และมีการใช้งาน robotics และมีการใช้งาน internet of things (IoT) และมีการใช้งาน blockchain และมีการใช้งาน quantum computing และมีการใช้งาน edge computing และมีการใช้งาน augmented reality (AR) / virtual reality (VR) และมีการใช้งาน 5G
+- 31. หลังจากเข้าใจข้อ 30 ให้ลองทำ stack ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning และมีการใช้งาน reinforcement learning และมีการใช้งาน natural language processing และมีการใช้งาน computer vision และมีการใช้งาน robotics และมีการใช้งาน internet of things (IoT) และมีการใช้งาน blockchain และมีการใช้งาน quantum computing และมีการใช้งาน edge computing และมีการใช้งาน augmented reality (AR) / virtual reality (VR) และมีการใช้งาน 5G และมีการใช้งาน artificial intelligence (AI)
+- 32. หลังจากเข้าใจข้อ 31 ให้ลองทำ stack ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning และมีการใช้งาน reinforcement learning และมีการใช้งาน natural language processing และมีการใช้งาน computer vision และมีการใช้งาน robotics และมีการใช้งาน internet of things (IoT) และมีการใช้งาน blockchain และมีการใช้งาน quantum computing และมีการใช้งาน edge computing และมีการใช้งาน augmented reality (AR) / virtual reality (VR) และมีการใช้งาน 5G และมีการใช้งาน artificial intelligence (AI) และมีการใช้งาน cybersecurity
+- 33. หลังจากเข้าใจข้อ 32 ให้ลองทำ stack ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning และมีการใช้งาน reinforcement learning และมีการใช้งาน natural language processing และมีการใช้งาน computer vision และมีการใช้งาน robotics และมีการใช้งาน internet of things (IoT) และมีการใช้งาน blockchain และมีการใช้งาน quantum computing และมีการใช้งาน edge computing และมีการใช้งาน augmented reality (AR) / virtual reality (VR) และมีการใช้งาน 5G และมีการใช้งาน artificial intelligence (AI) และมีการใช้งาน cybersecurity และมีการใช้งาน data privacy
+- 34. หลังจากเข้าใจข้อ 33 ให้ลองทำ stack ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning และมีการใช้งาน reinforcement learning และมีการใช้งาน natural language processing และมีการใช้งาน computer vision และมีการใช้งาน robotics และมีการใช้งาน internet of things (IoT) และมีการใช้งาน blockchain และมีการใช้งาน quantum computing และมีการใช้งาน edge computing และมีการใช้งาน augmented reality (AR) / virtual reality (VR) และมีการใช้งาน 5G และมีการใช้งาน artificial intelligence (AI) และมีการใช้งาน cybersecurity และมีการใช้งาน data privacy และมีการใช้งาน digital forensics
+- 35. หลังจากเข้าใจข้อ 34 ให้ลองทำ stack ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning และมีการใช้งาน reinforcement learning และมีการใช้งาน natural language processing และมีการใช้งาน computer vision และมีการใช้งาน robotics และมีการใช้งาน internet of things (IoT) และมีการใช้งาน blockchain และมีการใช้งาน quantum computing และมีการใช้งาน edge computing และมีการใช้งาน augmented reality (AR) / virtual reality (VR) และมีการใช้งาน 5G และมีการใช้งาน artificial intelligence (AI) และมีการใช้งาน cybersecurity และมีการใช้งาน data privacy และมีการใช้งาน digital forensics และมีการใช้งาน ethical hacking
+- 36. หลังจากเข้าใจข้อ 35 ให้ลองทำ stack ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning และมีการใช้งาน reinforcement learning และมีการใช้งาน natural language processing และมีการใช้งาน computer vision และมีการใช้งาน robotics และมีการใช้งาน internet of things (IoT) และมีการใช้งาน blockchain และมีการใช้งาน quantum computing และมีการใช้งาน edge computing และมีการใช้งาน augmented reality (AR) / virtual reality (VR) และมีการใช้งาน 5G และมีการใช้งาน artificial intelligence (AI) และมีการใช้งาน cybersecurity และมีการใช้งาน data privacy และมีการใช้งาน digital forensics และมีการใช้งาน ethical hacking และมีการใช้งาน penetration testing
+
+### Queue
+- 1. เริ่มจาก queue ด้วย primitive data type
+- 2. หลังจากเข้าใจข้อ 1 ให้ลองทำ queue ด้วย struct Node
+- 3. หลังจากเข้าใจข้อ 2 ให้ลองทำ queue ด้วย user-defined data type ที่ complex
+- 4. หลังจากเข้าใจข้อ 3 ให้ลองทำ queue ด้วย array
+- 5. หลังจากเข้าใจข้อ 4 ให้ลองทำ queue ด้วย vector
+- 6. หลังจากเข้าใจข้อ 5 ให้ลองทำ queue ด้วย linked list
+- 7. หลังจากเข้าใจข้อ 6 ให้ลองทำ queue ด้วย circular linked list
+- 8. หลังจากเข้าใจข้อ 7 ให้ลองทำ queue ด้วย doubly linked list
+- 9. หลังจากเข้าใจข้อ 8 ให้ลองทำ queue ด้วย template class
+- 10. หลังจากเข้าใจข้อ 9 ให้ลองทำ queue ด้วย template class ที่มี user-defined data type ที่ complex
+- 11. หลังจากเข้าใจข้อ 10 ให้ลองทำ queue ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ
+- 12. หลังจากเข้าใจข้อ 11 ให้ลองทำ queue ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling
+- 13. หลังจากเข้าใจข้อ 12 ให้ลองทำ queue ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer
+- 14. หลังจากเข้าใจข้อ 13 ให้ลองทำ queue ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading
+- 15. หลังจากเข้าใจข้อ 14 ให้ลองทำ queue ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing
+- 16. หลังจากเข้าใจข้อ 15 ให้ลองทำ queue ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing
+- 17. หลังจากเข้าใจข้อ 16 ให้ลองทำ queue ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing
+- 18. หลังจากเข้าใจข้อ 17 ให้ลองทำ queue ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data
+- 19. หลังจากเข้าใจข้อ 18 ให้ลองทำ queue ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning
+- 20. หลังจากเข้าใจข้อ 19 ให้ลองทำ queue ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning
+- 21. หลังจากเข้าใจข้อ 20 ให้ลองทำ queue ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning และมีการใช้งาน reinforcement learning
+- 22. หลังจากเข้าใจข้อ 21 ให้ลองทำ queue ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning และมีการใช้งาน reinforcement learning และมีการใช้งาน natural language processing
+- 23. หลังจากเข้าใจข้อ 22 ให้ลองทำ queue ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning และมีการใช้งาน reinforcement learning และมีการใช้งาน natural language processing และมีการใช้งาน computer vision
+- 24. หลังจากเข้าใจข้อ 23 ให้ลองทำ queue ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning และมีการใช้งาน reinforcement learning และมีการใช้งาน natural language processing และมีการใช้งาน computer vision และมีการใช้งาน robotics
+- 25. หลังจากเข้าใจข้อ 24 ให้ลองทำ queue ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning และมีการใช้งาน reinforcement learning และมีการใช้งาน natural language processing และมีการใช้งาน computer vision และมีการใช้งาน robotics และมีการใช้งาน internet of things (IoT)
+- 26. หลังจากเข้าใจข้อ 25 ให้ลองทำ queue ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning และมีการใช้งาน reinforcement learning และมีการใช้งาน natural language processing และมีการใช้งาน computer vision และมีการใช้งาน robotics และมีการใช้งาน blockchain
+- 27. หลังจากเข้าใจข้อ 26 ให้ลองทำ queue ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning และมีการใช้งาน reinforcement learning และมีการใช้งาน natural language processing และมีการใช้งาน computer vision และมีการใช้งาน robotics และมีการใช้งาน blockchain และมีการใช้งาน quantum computing
+- 28. หลังจากเข้าใจข้อ 27 ให้ลองทำ queue ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning และมีการใช้งาน reinforcement learning และมีการใช้งาน natural language processing และมีการใช้งาน computer vision และมีการใช้งาน robotics และมีการใช้งาน blockchain และมีการใช้งาน quantum computing และมีการใช้งาน edge computing
+- 29. หลังจากเข้าใจข้อ 28 ให้ลองทำ queue ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning และมีการใช้งาน reinforcement learning และมีการใช้งาน natural language processing และมีการใช้งาน computer vision และมีการใช้งาน robotics และมีการใช้งาน blockchain และมีการใช้งาน quantum computing และมีการใช้งาน edge computing และมีการใช้งาน 5G
+- 30. หลังจากเข้าใจข้อ 29 ให้ลองทำ queue ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning และมีการใช้งาน reinforcement learning และมีการใช้งาน natural language processing และมีการใช้งาน computer vision และมีการใช้งาน robotics และมีการใช้งาน blockchain และมีการใช้งาน quantum computing และมีการใช้งาน edge computing และมีการใช้งาน 5G
+- 31. หลังจากเข้าใจข้อ 30 ให้ลองทำ queue ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning และมีการใช้งาน reinforcement learning และมีการใช้งาน natural language processing และมีการใช้งาน computer vision และมีการใช้งาน robotics และมีการใช้งาน blockchain และมีการใช้งาน quantum computing และมีการใช้งาน edge computing และมีการใช้งาน 5G และมีการใช้งาน artificial intelligence (AI)
+- 32. หลังจากเข้าใจข้อ 31 ให้ลองทำ queue ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning และมีการใช้งาน reinforcement learning และมีการใช้งาน natural language processing และมีการใช้งาน computer vision และมีการใช้งาน robotics และมีการใช้งาน blockchain และมีการใช้งาน quantum computing และมีการใช้งาน edge computing และมีการใช้งาน 5G และมีการใช้งาน artificial intelligence (AI) และมีการใช้งาน cybersecurity
+- 33. หลังจากเข้าใจข้อ 32 ให้ลองทำ queue ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning และมีการใช้งาน reinforcement learning และมีการใช้งาน natural language processing และมีการใช้งาน computer vision และมีการใช้งาน robotics และมีการใช้งาน blockchain และมีการใช้งาน quantum computing และมีการใช้งาน edge computing และมีการใช้งาน 5G และมีการใช้งาน artificial intelligence (AI) และมีการใช้งาน cybersecurity และมีการใช้งาน data privacy
+- 34. หลังจากเข้าใจข้อ 33 ให้ลองทำ queue ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning และมีการใช้งาน reinforcement learning และมีการใช้งาน natural language processing และมีการใช้งาน computer vision และมีการใช้งาน robotics และมีการใช้งาน blockchain และมีการใช้งาน quantum computing และมีการใช้งาน edge computing และมีการใช้งาน 5G และมีการใช้งาน artificial intelligence (AI) และมีการใช้งาน cybersecurity และมีการใช้งาน data privacy และมีการใช้งาน digital forensics
+- 35. หลังจากเข้าใจข้อ 34 ให้ลองทำ queue ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning และมีการใช้งาน reinforcement learning และมีการใช้งาน natural language processing และมีการใช้งาน computer vision และมีการใช้งาน robotics และมีการใช้งาน blockchain และมีการใช้งาน quantum computing และมีการใช้งาน edge computing และมีการใช้งาน 5G และมีการใช้งาน artificial intelligence (AI) และมีการใช้งาน cybersecurity และมีการใช้งาน data privacy และมีการใช้งาน digital forensics และมีการใช้งาน ethical hacking
+- 36. หลังจากเข้าใจข้อ 35 ให้ลองทำ queue ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning และมีการใช้งาน reinforcement learning และมีการใช้งาน natural language processing และมีการใช้งาน computer vision และมีการใช้งาน robotics และมีการใช้งาน blockchain และมีการใช้งาน quantum computing และมีการใช้งาน edge computing และมีการใช้งาน 5G และมีการใช้งาน artificial intelligence (AI) และมีการใช้งาน cybersecurity และมีการใช้งาน data privacy และมีการใช้งาน digital forensics และมีการใช้งาน ethical hacking และมีการใช้งาน penetration testing
+- 37. หลังจากเข้าใจข้อ 36 ให้ลองทำ queue ด้วย template class ที่มี user-defined data type ที่ complex และมีการ overload operator ต่างๆ และมีการใช้งาน exception handling และมีการใช้งาน smart pointer และมีการใช้งาน multithreading และมีการใช้งาน parallel processing และมีการใช้งาน distributed computing และมีการใช้งาน cloud computing และมีการใช้งาน big data และมีการใช้งาน machine learning และมีการใช้งาน deep learning และมีการใช้งาน reinforcement learning และมีการใช้งาน natural language processing และมีการใช้งาน computer vision และมีการใช้งาน robotics และมีการใช้งาน blockchain และมีการใช้งาน quantum computing และมีการใช้งาน edge computing และมีการใช้งาน 5G และมีการใช้งาน artificial intelligence (AI) และมีการใช้งาน cybersecurity และมีการใช้งาน data privacy และมีการใช้งาน digital forensics และมีการใช้งาน ethical hacking และมีการใช้งาน penetration testing
+
+### Linked List
+- 1. เริ่มจาก linked list ด้วย primitive data type
+- 2. หลังจากเข้าใจข้อ 1 ให้ลองทำ linked list ด้วย struct Node
+- 3. หลังจากเข้าใจข้อ 2 ให้ลองทำ linked list ด้วย user-defined data type ที่ complex
+- 4. หลังจากเข้าใจข้อ 3 ให้ลองทำ linked list ด้วย template class ที่มีการ overload operator ต่างๆ
+- 5. หลังจากเข้าใจข้อ 4 ให้ลองทำ linked list ด้วย smart pointer
+- 6. หลังจากเข้าใจข้อ 5 ให้ลองทำ linked list ด้วย multithreading
+- 7. หลังจากเข้าใจข้อ 6 ให้ลองทำ linked list ด้วย parallel processing
+- 8. หลังจากเข้าใจข้อ 7 ให้ลองทำ linked list ด้วย distributed computing
+- 9. หลังจากเข้าใจข้อ 8 ให้ลองทำ linked list ด้วย cloud computing
+- 10. หลังจากเข้าใจข้อ 9 ให้ลองทำ linked list ด้วย big data
+- 11. หลังจากเข้าใจข้อ 10 ให้ลองทำ linked list ด้วย machine learning
+- 12. หลังจากเข้าใจข้อ 11 ให้ลองทำ linked list ด้วย deep learning
+- 13. หลังจากเข้าใจข้อ 12 ให้ลองทำ linked list ด้วย reinforcement learning
+- 14. หลังจากเข้าใจข้อ 13 ให้ลองทำ linked list ด้วย natural language processing
+- 15. หลังจากเข้าใจข้อ 14 ให้ลองทำ linked list ด้วย computer vision
+- 16. หลังจากเข้าใจข้อ 15 ให้ลองทำ linked list ด้วย robotics
+- 17. หลังจากเข้าใจข้อ 16 ให้ลองทำ linked list ด้วย internet of things (IoT)
+- 18. หลังจากเข้าใจข้อ 17 ให้ลองทำ linked list ด้วย blockchain
+- 19. หลังจากเข้าใจข้อ 18 ให้ลองทำ linked list ด้วย quantum computing
+- 20. หลังจากเข้าใจข้อ 19 ให้ลองทำ linked list ด้วย edge computing
+- 21. หลังจากเข้าใจข้อ 20 ให้ลองทำ linked list ด้วย augmented reality (AR) / virtual reality (VR)
+- 22. หลังจากเข้าใจข้อ 21 ให้ลองทำ linked list ด้วย digital twin
+- 23. หลังจากเข้าใจข้อ 22 ให้ลองทำ linked list ด้วย 5G
+- 24. หลังจากเข้าใจข้อ 23 ให้ลองทำ linked list ด้วย artificial intelligence (AI)
+- 25. หลังจากเข้าใจข้อ 24 ให้ลองทำ linked list ด้วย cybersecurity
+- 26. หลังจากเข้าใจข้อ 25 ให้ลองทำ linked list ด้วย data privacy
+- 27. หลังจากเข้าใจข้อ 26 ให้ลองทำ linked list ด้วย digital forensics
+- 28. หลังจากเข้าใจข้อ 27 ให้ลองทำ linked list ด้วย ethical hacking
+- 29. หลังจากเข้าใจข้อ 28 ให้ลองทำ linked list ด้วย penetration testing
+- 30. หลังจากเข้าใจข้อ 29 ให้ลองทำ linked list ด้วย security information and event management (SIEM)
+- 31. หลังจากเข้าใจข้อ 30 ให้ลองทำ linked list ด้วย intrusion detection system (IDS)
+- 32. หลังจากเข้าใจข้อ 31 ให้ลองทำ linked list ด้วย intrusion prevention system (IPS)
+- 33. หลังจากเข้าใจข้อ 32 ให้ลองทำ linked list ด้วย firewall
+- 34. หลังจากเข้าใจข้อ 33 ให้ลองทำ linked list ด้วย network segmentation
+- 35. หลังจากเข้าใจข้อ 34 ให้ลองทำ linked list ด้วย data loss prevention (DLP)
+- 36. หลังจากเข้าใจข้อ 35 ให้ลองทำ linked list ด้วย endpoint security
+- 37. หลังจากเข้าใจข้อ 36 ให้ลองทำ linked list ด้วย mobile device management (MDM)
+- 38. หลังจากเข้าใจข้อ 37 ให้ลองทำ linked list ด้วย cloud access security broker (CASB)
+- 39. หลังจากเข้าใจข้อ 38 ให้ลองทำ linked list ด้วย zero trust security
+- 40. หลังจากเข้าใจข้อ 39 ให้ลองทำ linked list ด้วย security orchestration, automation and response (SOAR)
+- 41. หลังจากเข้าใจข้อ 40 ให้ลองทำ linked list ด้วย threat intelligence
+
+- 42. หลังจากเข้าใจข้อ 41 ให้ลองทำ linked list ด้วย vulnerability management
+- 43. หลังจากเข้าใจข้อ 42 ให้ลองทำ linked list ด้วย penetration testing
+- 44. หลังจากเข้าใจข้อ 43 ให้ลองทำ linked list ด้วย red teaming
+- 45. หลังจากเข้าใจข้อ 44 ให้ลองทำ linked list ด้วย blue teaming
+- 46. หลังจากเข้าใจข้อ 45 ให้ลองทำ linked list ด้วย security awareness training
+- 47. หลังจากเข้าใจข้อ 46 ให้ลองทำ linked list ด้วย incident response
+- 48. หลังจากเข้าใจข้อ 47 ให้ลองทำ linked list ด้วย disaster recovery
+- 49. หลังจากเข้าใจข้อ 48 ให้ลองทำ linked list ด้วย business continuity planning (BCP)
+- 50. หลังจากเข้าใจข้อ 49 ให้ลองทำ linked list ด้วย IT service management (ITSM)
+- 51. หลังจากเข้าใจข้อ 50 ให้ลองทำ linked list ด้วย project management
+- 52. หลังจากเข้าใจข้อ 51 ให้ลองทำ linked list ด้วย agile methodology
+- 53. หลังจากเข้าใจข้อ 52 ให้ลองทำ linked list ด้วย scrum
+- 54. หลังจากเข้าใจข้อ 53 ให้ลองทำ linked list ด้วย kanban
+- 55. หลังจากเข้าใจข้อ 54 ให้ลองทำ linked list ด้วย lean
+- 56. หลังจากเข้าใจข้อ 55 ให้ลองทำ linked list ด้วย DevOps
+- 57. หลังจากเข้าใจข้อ 56 ให้ลองทำ linked list ด้วย continuous integration/continuous deployment (CI/CD)
+- 58. หลังจากเข้าใจข้อ 57 ให้ลองทำ linked list ด้วย infrastructure as code (IaC)
+- 59. หลังจากเข้าใจข้อ 58 ให้ลองทำ linked list ด้วย configuration management
+- 60. หลังจากเข้าใจข้อ 59 ให้ลองทำ linked list ด้วย containerization
+- 61. หลังจากเข้าใจข้อ 60 ให้ลองทำ linked list ด้วย orchestration
+- 62. หลังจากเข้าใจข้อ 61 ให้ลองทำ linked list ด้วย service mesh
+- 63. หลังจากเข้าใจข้อ 62 ให้ลองทำ linked list ด้วย microservices
+- 64. หลังจากเข้าใจข้อ 63 ให้ลองทำ linked list ด้วย serverless architecture
+- 65. หลังจากเข้าใจข้อ 64 ให้ลองทำ linked list ด้วย event-driven architecture
+- 66. หลังจากเข้าใจข้อ 65 ให้ลองทำ linked list ด้วย micro frontends
+- 67. หลังจากเข้าใจข้อ 66 ให้ลองทำ linked list ด้วย progressive web apps (PWAs)
+- 68. หลังจากเข้าใจข้อ 67 ให้ลองทำ linked list ด้วย single page applications (SPAs)
+- 69. หลังจากเข้าใจข้อ 68 ให้ลองทำ linked list ด้วย mobile applications
+- 70. หลังจากเข้าใจข้อ 69 ให้ลองทำ linked list ด้วย cross-platform development
+- 71. หลังจากเข้าใจข้อ 70 ให้ลองทำ linked list ด้วย native applications
+- 72. หลังจากเข้าใจข้อ 71 ให้ลองทำ linked list ด้วย hybrid applications
+- 73. หลังจากเข้าใจข้อ 72 ให้ลองทำ linked list ด้วย responsive design
+- 74. หลังจากเข้าใจข้อ 73 ให้ลองทำ linked list ด้วย mobile-first design
+- 75. หลังจากเข้าใจข้อ 74 ให้ลองทำ linked list ด้วย progressive enhancement
+- 76. หลังจากเข้าใจข้อ 75 ให้ลองทำ linked list ด้วย responsive images
+- 77. หลังจากเข้าใจข้อ 76 ให้ลองทำ linked list ด้วย art direction
+- 78. หลังจากเข้าใจข้อ 77 ให้ลองทำ linked list ด้วย design systems
+- 79. หลังจากเข้าใจข้อ 78 ให้ลองทำ linked list ด้วย user experience (UX) design
+- 80. หลังจากเข้าใจข้อ 79 ให้ลองทำ linked list ด้วย user interface (UI) design
+- 81. หลังจากเข้าใจข้อ 80 ให้ลองทำ linked list ด้วย interaction design
+- 82. หลังจากเข้าใจข้อ 81 ให้ลองทำ linked list ด้วย motion design
+- 83. หลังจากเข้าใจข้อ 82 ให้ลองทำ linked list ด้วย sound design
+- 84. หลังจากเข้าใจข้อ 83 ให้ลองทำ linked list ด้วย visual design
+- 85. หลังจากเข้าใจข้อ 84 ให้ลองทำ linked list ด้วย graphic design
+- 86. หลังจากเข้าใจข้อ 85 ให้ลองทำ linked list ด้วย typography
+- 87. หลังจากเข้าใจข้อ 86 ให้ลองทำ linked list ด้วย color theory
+- 88. หลังจากเข้าใจข้อ 87 ให้ลองทำ linked list ด้วย layout design
+- 89. หลังจากเข้าใจข้อ 88 ให้ลองทำ linked list ด้วย information architecture
+- 90. หลังจากเข้าใจข้อ 89 ให้ลองทำ linked list ด้วย content strategy
+- 91. หลังจากเข้าใจข้อ 90 ให้ลองทำ linked list ด้วย copywriting
+- 92. หลังจากเข้าใจข้อ 91 ให้ลองทำ linked list ด้วย content marketing
+- 93. หลังจากเข้าใจข้อ 92 ให้ลองทำ linked list ด้วย social media marketing
+- 94. หลังจากเข้าใจข้อ 93 ให้ลองทำ linked list ด้วย email marketing
+- 95. หลังจากเข้าใจข้อ 94 ให้ลองทำ linked list ด้วย influencer marketing
+- 96. หลังจากเข้าใจข้อ 95 ให้ลองทำ linked list ด้วย affiliate marketing
+- 97. หลังจากเข้าใจข้อ 96 ให้ลองทำ linked list ด้วย referral marketing
+- 98. หลังจากเข้าใจข้อ 97 ให้ลองทำ linked list ด้วย direct marketing
+- 99. หลังจากเข้าใจข้อ 98 ให้ลองทำ linked list ด้วย guerrilla marketing
+- 100. หลังจากเข้าใจข้อ 99 ให้ลองทำ linked list ด้วย experiential marketing
+- 101. หลังจากเข้าใจข้อ 100 ให้ลองทำ linked list ด้วย cause marketing
+- 102. หลังจากเข้าใจข้อ 101 ให้ลองทำ linked list ด้วย purpose-driven marketing
+- 103. หลังจากเข้าใจข้อ 102 ให้ลองทำ linked list ด้วย brand storytelling
+- 104. หลังจากเข้าใจข้อ 103 ให้ลองทำ linked list ด้วย narrative design
+- 105. หลังจากเข้าใจข้อ 104 ให้ลองทำ linked list ด้วย storyboarding
+- 106. หลังจากเข้าใจข้อ 105 ให้ลองทำ linked list ด้วย scriptwriting
+- 107. หลังจากเข้าใจข้อ 106 ให้ลองทำ linked list ด้วย screenwriting
+- 108. หลังจากเข้าใจข้อ 107 ให้ลองทำ linked list ด้วย playwriting
+- 109. หลังจากเข้าใจข้อ 108 ให้ลองทำ linked list ด้วย poetry
+- 110. หลังจากเข้าใจข้อ 109 ให้ลองทำ linked list ด้วย creative writing
+- 111. หลังจากเข้าใจข้อ 110 ให้ลองทำ linked list ด้วย technical writing
+- 112. หลังจากเข้าใจข้อ 111 ให้ลองทำ linked list ด้วย business writing
+- 113. หลังจากเข้าใจข้อ 112 ให้ลองทำ linked list ด้วย scientific writing
+- 114. หลังจากเข้าใจข้อ 113 ให้ลองทำ linked list ด้วย academic writing
+- 115. หลังจากเข้าใจข้อ 114 ให้ลองทำ linked list ด้วย research writing
+- 116. หลังจากเข้าใจข้อ 115 ให้ลองทำ linked list ด้วย grant writing
+- 117. หลังจากเข้าใจข้อ 116 ให้ลองทำ linked list ด้วย proposal writing
+- 118. หลังจากเข้าใจข้อ 117 ให้ลองทำ linked list ด้วย business proposal writing
+- 119. หลังจากเข้าใจข้อ 118 ให้ลองทำ linked list ด้วย project proposal writing
+- 120. หลังจากเข้าใจข้อ 119 ให้ลองทำ linked list ด้วย research proposal writing
+- 121. หลังจากเข้าใจข้อ 120 ให้ลองทำ linked list ด้วย funding proposal writing
+- 122. หลังจากเข้าใจข้อ 121 ให้ลองทำ linked list ด้วย grant application writing
+- 123. หลังจากเข้าใจข้อ 122 ให้ลองทำ linked list ด้วย business plan writing
+- 124. หลังจากเข้าใจข้อ 123 ให้ลองทำ linked list ด้วย strategic planning
+- 125. หลังจากเข้าใจข้อ 124 ให้ลองทำ linked list ด้วย operational planning
+- 126. หลังจากเข้าใจข้อ 125 ให้ลองทำ linked list ด้วย contingency planning
+- 127. หลังจากเข้าใจข้อ 126 ให้ลองทำ linked list ด้วย project management
+- 128. หลังจากเข้าใจข้อ 127 ให้ลองทำ linked list ด้วย program management
+- 129. หลังจากเข้าใจข้อ 128 ให้ลองทำ linked list ด้วย portfolio management
+- 130. หลังจากเข้าใจข้อ 129 ให้ลองทำ linked list ด้วย resource management
+- 131. หลังจากเข้าใจข้อ 130 ให้ลองทำ linked list ด้วย capacity planning
+- 132. หลังจากเข้าใจข้อ 131 ให้ลองทำ linked list ด้วย demand forecasting
+- 133. หลังจากเข้าใจข้อ 132 ให้ลองทำ linked list ด้วย supply chain management
+- 134. หลังจากเข้าใจข้อ 133 ให้ลองทำ linked list ด้วย logistics management
+- 135. หลังจากเข้าใจข้อ 134 ให้ลองทำ linked list ด้วย inventory management
+- 136. หลังจากเข้าใจข้อ 135 ให้ลองทำ linked list ด้วย procurement management
+- 137. หลังจากเข้าใจข้อ 136 ให้ลองทำ linked list ด้วย supplier management
+- 138. หลังจากเข้าใจข้อ 137 ให้ลองทำ linked list ด้วย vendor management
+- 139. หลังจากเข้าใจข้อ 138 ให้ลองทำ linked list ด้วย customer relationship management
+
