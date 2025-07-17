@@ -30,6 +30,7 @@ This comprehensive guide covers Git and GitHub fundamentals for absolute beginne
 
 - **Git Basics**: What Git is and why it's essential
 - **Local Commands**: `git init`, `git add`, `git commit`, `git status`, `git log`
+- **SSH Setup**: Secure authentication with GitHub (no more passwords!)
 - **GitHub Integration**: Connecting local repositories to GitHub
 - **Collaboration**: Basic teamwork concepts and best practices
 - **Step-by-Step Examples**: Clear instructions with practical examples
@@ -44,6 +45,7 @@ This comprehensive guide covers Git and GitHub fundamentals for absolute beginne
 
 - **พื้นฐาน Git**: Git คืออะไรและทำไมถึงสำคัญ
 - **คำสั่งในเครื่อง**: `git init`, `git add`, `git commit`, `git status`, `git log`
+- **การตั้งค่า SSH**: การยืนยันตัวตนที่ปลอดภัยกับ GitHub (ไม่ต้องใส่รหัสผ่านอีก!)
 - **การผสานรวม GitHub**: เชื่อมต่อ repository ในเครื่องกับ GitHub
 - **การทำงานร่วมกัน**: แนวคิดการทำงานเป็นทีมและแนวปฏิบัติที่ดี
 - **ตัวอย่างทีละขั้น**: คำแนะนำที่ชัดเจนพร้อมตัวอย่างจริง

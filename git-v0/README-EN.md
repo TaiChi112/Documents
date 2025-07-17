@@ -21,10 +21,11 @@
 1. [Introduction to Git](#introduction-to-git)
 2. [Basic Git Commands (Local Repository)](#basic-git-commands-local-repository)
 3. [Introduction to GitHub](#introduction-to-github)
-4. [Connecting Local Git to GitHub](#connecting-local-git-to-github)
-5. [Cloning an Existing Repository](#cloning-an-existing-repository)
-6. [Basic Collaboration Concepts](#basic-collaboration-concepts)
-7. [Quick Reference](#quick-reference)
+4. [Setting Up SSH Key for GitHub (First-Time Setup)](#setting-up-ssh-key-for-github-first-time-setup)
+5. [Connecting Local Git to GitHub](#connecting-local-git-to-github)
+6. [Cloning an Existing Repository](#cloning-an-existing-repository)
+7. [Basic Collaboration Concepts](#basic-collaboration-concepts)
+8. [Quick Reference](#quick-reference)
 
 ---
 
@@ -143,6 +144,111 @@ GitHub is a **cloud-based hosting service** for Git repositories. Think of it as
 
 ---
 
+## Setting Up SSH Key for GitHub (First-Time Setup)
+
+**Important for beginners:** Before connecting to GitHub, it's recommended to set up an SSH key for secure, password-free authentication. This is a one-time setup that makes your GitHub experience much smoother.
+
+### What is an SSH Key?
+
+An SSH key is like a digital "ID card" that proves you are who you say you are when connecting to GitHub. Instead of typing your password every time, your computer uses this special key to authenticate automatically.
+
+**Benefits:**
+- **No more passwords:** Push and pull without typing credentials
+- **More secure:** Better security than password authentication
+- **Convenient:** Works automatically once set up
+
+### Step-by-Step SSH Key Setup
+
+#### Step 1: Check if you already have an SSH key
+
+Open your terminal and run:
+
+```bash
+ls -al ~/.ssh
+```
+
+If you see files like `id_rsa` and `id_rsa.pub` (or `id_ed25519` and `id_ed25519.pub`), you already have an SSH key. Skip to Step 3.
+
+#### Step 2: Generate a new SSH key
+
+If you don't have an SSH key, create one:
+
+```bash
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+
+**Replace `your_email@example.com` with your actual GitHub email address.**
+
+When prompted:
+1. **File location:** Press Enter to use the default location
+2. **Passphrase:** You can press Enter for no passphrase, or enter a secure passphrase (recommended)
+
+**Example output:**
+```
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/home/username/.ssh/id_ed25519): [Press Enter]
+Enter passphrase (empty for no passphrase): [Type passphrase or press Enter]
+Enter same passphrase again: [Type passphrase again or press Enter]
+```
+
+#### Step 3: Add SSH key to ssh-agent
+
+Start the ssh-agent and add your key:
+
+```bash
+# Start ssh-agent
+eval "$(ssh-agent -s)"
+
+# Add your SSH key
+ssh-add ~/.ssh/id_ed25519
+```
+
+#### Step 4: Copy your public key
+
+Copy your public key to clipboard:
+
+**On Windows (Git Bash):**
+```bash
+clip < ~/.ssh/id_ed25519.pub
+```
+
+**On Mac:**
+```bash
+pbcopy < ~/.ssh/id_ed25519.pub
+```
+
+**On Linux:**
+```bash
+cat ~/.ssh/id_ed25519.pub
+# Then manually copy the output
+```
+
+#### Step 5: Add SSH key to GitHub
+
+1. Go to [GitHub.com](https://github.com) and sign in
+2. Click your profile picture (top-right corner)
+3. Click **Settings**
+4. In the left sidebar, click **SSH and GPG keys**
+5. Click **New SSH key**
+6. Give your key a title (e.g., "My Laptop" or "Work Computer")
+7. Paste your key in the "Key" field
+8. Click **Add SSH key**
+
+#### Step 6: Test your SSH connection
+
+```bash
+ssh -T git@github.com
+```
+
+You should see a message like:
+```
+Hi username! You've successfully authenticated, but GitHub does not provide shell access.
+```
+
+**If you get a warning about authenticity:** Type "yes" and press Enter.
+
+---
+
 ## Connecting Local Git to GitHub
 
 ### Step 1: Create a New Repository on GitHub
@@ -156,10 +262,23 @@ GitHub is a **cloud-based hosting service** for Git repositories. Think of it as
 
 ### Step 2: Connect Your Local Repository
 
-After creating the repository, GitHub will show you commands:
+After creating the repository, GitHub will show you commands. **Choose the SSH option** if you set up an SSH key:
 
+**Using SSH (Recommended if you set up SSH key):**
 ```bash
-# Add GitHub as the remote origin
+# Add GitHub as the remote origin (SSH)
+git remote add origin git@github.com:yourusername/your-repo-name.git
+
+# Rename your main branch to 'main' (GitHub's default)
+git branch -M main
+
+# Push your code to GitHub
+git push -u origin main
+```
+
+**Using HTTPS (Alternative method):**
+```bash
+# Add GitHub as the remote origin (HTTPS)
 git remote add origin https://github.com/yourusername/your-repo-name.git
 
 # Rename your main branch to 'main' (GitHub's default)
@@ -173,6 +292,8 @@ git push -u origin main
 - `git remote add origin`: Links your local repository to GitHub
 - `git branch -M main`: Renames your current branch to "main"
 - `git push -u origin main`: Uploads your code to GitHub and sets up tracking
+
+**Note:** If you use HTTPS, you'll need to enter your GitHub username and password (or personal access token) each time you push.
 
 ### Step 3: Future Updates
 
