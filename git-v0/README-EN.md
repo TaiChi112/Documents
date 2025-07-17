@@ -4,7 +4,7 @@
 
 ## 🌐 Language Selection / เลือกภาษา
 
-[![🇺🇸 English (Current)](https://img.shields.io/badge/🇺🇸_English_(Current)-4CAF50?style=for-the-badge&logo=github)](README-EN.md) [![🇹🇭 ไทย](https://img.shields.io/badge/🇹🇭_ไทย-FF5722?style=for-the-badge&logo=github)](README-TH.md)
+[![🇺🇸 English (Current)](https://img.shields.io/badge/🇺🇸_English_(Current)-4CAF50?style=for-the-badge&logo=github)](README-EN.md) [![🇹🇭 THAI](https://img.shields.io/badge/🇹🇭_THAI_(Current)-FF5722?style=for-the-badge&logo=github)](README-TH.md)
 
 ---
 
