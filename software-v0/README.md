@@ -1,7 +1,7 @@
 # Project Simple Calculator
 ## Software Requirements Engineering Process
 
-- inception
+- inception (การเริ่มต้นวิเคราะห์)
   - คุณทำอะไร: อาจจะคิดเองหรือคุยกับ team (ในฐานะ User) ว่าอยากให้ calculator ทำอะไรได้บ้าง
   - คำถามที่ถาม:
     - "calculator ควรทำอะไรได้บ้าง?" (add subtract multiply divide)
@@ -9,7 +9,7 @@
     - "มันจะทำงานบน platform ไหน?" (web, mobile, desktop)
   - result: ต้องการ calculator ที่สามารถ add, subtract, multiply, divide เลข 2 จำนวนได้
 
-- eliciation
+- elicitation (การเจาะลึกความต้องการ)
   - คุณทำอะไร: นึกถึงความต้องการใช้งาน calculator จริงๆ
   - กิจกรรม:
     - "เมื่อเรากดตัวเลข ต้องแสดงผลที่หน้าจอ"
@@ -17,7 +17,7 @@
     - "เมื่อกดตัวเลขที่สอง เเล้วกดเท่ากับ ต้องแสดงผลลัพธ์"
   - result: ได้รายการความต้องการ เช่น "เเสดงผลลัพธ์","รับตัวเลขได้","รับเครื่องหมายการคำนวณได้"
 
-- elaboration
+- elaboration (การขยายความรายละเอียด)
   - คุณทำอะไร: เริ่มจัดระเบียบเเละระบุรายละเอียดของความต้องการที่รวบรวมมา
   - กิจกรรม:
     - function: "add", "subtract", "multiply", "divide"
@@ -25,11 +25,11 @@
     - ขั้นตอน: กดตัวเลขเเรก 1 -> กดเครื่องหมาย -> กดตัวเลขที่ 2 -> กดเท่ากับ -> แสดงผลลัพธ์
   - result: เห็นภาพรวมของ functionality เเละ data ที่เกี่ยวข้อง
 
-- negotiation
+- negotiation (การเจรจาต่อรอง)
   - คุณทำอะไร: ใน project เล็กๆ อย่างนี้ การเจรจาอาจจะไม่ซับซ้อนมาก เป็นการสินใจกับตัวเองหรือ team ว่า "จะเพิ่ม functionality พิเศษไหม? เช่น รากที่สอง? หรือเเค่ 4 อย่างหลักก็พอเเล้วสำหรับ version แรก?"
   - result: ตัดสินใจว่าจะทำเเค่ add, subtract, multiply, divide เพื่อให้ง่ายเเละรวดเร็ว
 
-- specification
+- specification (การทำข้อกำหนด)
   - คุณทำอะไร: เขียนสรุปความต้องการทั้งหมดในรูปแบบที่ชัดเจน เเละเป็นทางการ
   - SRS (Software Requirements Specification) เเบบย่อๆ:
     - **Functionality**:
@@ -48,11 +48,11 @@
   - result: document (อาจจะสั้นๆ) ที่ระบุสิ่งที่เครื่องคิดเลขต้องทำได้
   
 
-- validation
+- validation (การตรวจรับ)
   - คุณทำอะไร: ลองคิดภาพว่าถ้ามีเครื่อง calculator นี้คุณจะลองใช้งานยังไง? กด 1 + 1 = 2 ถูกไหม?
   - result: ยืนยันว่าสิ่งที่่กำหนดไว้ในนั้นถูกต้อง เเละสามารถใช้งานได้จริง
-  
-- requirement management
+
+- requirement management (การจัดการความต้องการ)
   - คุณทำอะไร: หากในอนาคตอยากเพิ่ม functionality (เช่น percentage, square root) ก็ต้องบันทึกไว้เป็นการเปลี่ยนเเปลง
 
 ## Analysis Model
