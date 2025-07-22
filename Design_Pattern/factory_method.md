@@ -75,3 +75,127 @@ classDiagram
     ReportGeneratorFactory <|-- ExcelReportGenerator:extends
     ReportGeneratorFactory <|-- WordReportGenerator:extends
     IReport <.. ReportGeneratorFactory
+```
+
+## Geme Character Creation Factory Method
+```mermaid
+classDiagram
+    class ICharacter {
+        <<interface>>
+        +attack() void
+        +defend() void
+        +useSkill() void
+    }
+    class Warrior {
+    }
+    class Mage {
+    }
+    class Archer {
+    }
+    class CharacterFactory {
+        <<abstract>>
+        +createCharacter() ICharacter
+    }
+    class WarriorFactory {
+        +createCharacter() Warrior
+    }
+    class MageFactory {
+        +createCharacter() Mage
+    }
+    class ArcherFactory {
+        +createCharacter() Archer
+    }
+    ICharacter <|.. Warrior:implements
+    ICharacter <|.. Mage:implements
+    ICharacter <|.. Archer:implements
+    CharacterFactory <|-- WarriorFactory:extends
+    CharacterFactory <|-- MageFactory:extends
+    CharacterFactory <|-- ArcherFactory:extends
+    ICharacter <.. CharacterFactory
+```
+
+## Payment Gateway Integration Factory Method
+```mermaid
+classDiagram
+    class IPaymentGateway {
+        <<interface>>
+        +processPayment() void
+        +refund() void
+        +checkStatus() void
+    }
+    class PayPalGateway {
+    }
+    class StripeGateway {
+    }
+    class OmiseGateway {
+    }
+    class PaymentGatewayFactory {
+        <<abstract>>
+        +createPaymentGateway() IPaymentGateway
+    }
+    class PayPalGatewayFactory {
+        +createPaymentGateway() PayPalGateway
+    }
+    class StripeGatewayFactory {
+        +createPaymentGateway() StripeGateway
+    }
+    class OmiseGatewayFactory {
+        +createPaymentGateway() OmiseGateway
+    }
+    IPaymentGateway <|.. PayPalGateway:implements
+    IPaymentGateway <|.. StripeGateway:implements
+    IPaymentGateway <|.. OmiseGateway:implements
+    PaymentGatewayFactory <|-- PayPalGatewayFactory:extends
+    PaymentGatewayFactory <|-- StripeGatewayFactory:extends
+    PaymentGatewayFactory <|-- OmiseGatewayFactory:extends
+    IPaymentGateway <.. PaymentGatewayFactory
+```
+
+## Cloud Resource Provisioning Factory Method
+```mermaid
+classDiagram
+    class ICloudResource {
+        <<interface>>
+        +provision() void
+        +deprovision() void
+        +getStatus() void
+    }
+    class AwsVM {
+    }
+    class AwsDatabase {
+    }
+    class AzureVM {
+    }
+    class AzureDatabase {
+    }
+    class GcpVM {
+    }
+    class GcpDatabase {
+    }
+    class CloudProviderFactory {
+        <<abstract>>
+        +createCloudResource() ICloudResource
+    }
+    class AwsFactory {
+        +createCloudResource() AwsVM
+        +createCloudResource() AwsDatabase
+    }
+    class AzureFactory {
+        +createCloudResource() AzureVM
+        +createCloudResource() AzureDatabase
+    }
+    class GcpFactory {
+        +createCloudResource() GcpVM
+        +createCloudResource() GcpDatabase
+    }
+    ICloudResource <|.. AwsVM:implements
+    ICloudResource <|.. AwsDatabase:implements
+    ICloudResource <|.. AzureVM:implements
+    ICloudResource <|.. AzureDatabase:implements
+    ICloudResource <|.. GcpVM:implements
+    ICloudResource <|.. GcpDatabase:implements
+    CloudProviderFactory <|-- AwsFactory:extends
+    CloudProviderFactory <|-- AzureFactory:extends
+    CloudProviderFactory <|-- GcpFactory:extends
+    ICloudResource <.. CloudProviderFactory
+```
