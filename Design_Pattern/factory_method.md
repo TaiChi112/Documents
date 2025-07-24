@@ -1,5 +1,4 @@
 ## Transportation Factory Method
-
 ```mermaid
 classDiagram
     class ITransport {
@@ -198,4 +197,115 @@ classDiagram
     CloudProviderFactory <|-- AzureFactory:extends
     CloudProviderFactory <|-- GcpFactory:extends
     ICloudResource <.. CloudProviderFactory
+```
+
+## Notification Service Factory Method
+```mermaid
+classDiagram
+    class INotificationService {
+        <<interface>>
+        +sendNotification() void
+        +scheduleNotification() void
+        +cancelNotification() void
+    }
+    class EmailNotificationService {
+    }
+    class SmsNotificationService {
+    }
+    class PushNotificationService {
+    }
+    class NotificationServiceFactory {
+        <<abstract>>
+        +createNotificationService() INotificationService
+    }
+    class EmailNotificationServiceFactory {
+        +createNotificationService() EmailNotificationService
+    }
+    class SmsNotificationServiceFactory {
+        +createNotificationService() SmsNotificationService
+    }
+    class PushNotificationServiceFactory {
+        +createNotificationService() PushNotificationService
+    }
+    INotificationService <|.. EmailNotificationService:implements
+    INotificationService <|.. SmsNotificationService:implements
+    INotificationService <|.. PushNotificationService:implements
+    NotificationServiceFactory <|-- EmailNotificationServiceFactory:extends
+    NotificationServiceFactory <|-- SmsNotificationServiceFactory:extends
+    NotificationServiceFactory <|-- PushNotificationServiceFactory:extends
+    INotificationService <.. NotificationServiceFactory
+```
+
+## User Authentication Factory Method
+```mermaid
+classDiagram
+    class IUserAuthentication {
+        <<interface>>
+        +login() void
+        +logout() void
+        +register() void
+    }
+    class LocalAuthentication {
+    }
+    class OAuthAuthentication {
+    }
+    class SsoAuthentication {
+    }
+    class UserAuthenticationFactory {
+        <<abstract>>
+        +createUserAuthentication() IUserAuthentication
+    }
+    class LocalAuthenticationFactory {
+        +createUserAuthentication() LocalAuthentication
+    }
+    class OAuthAuthenticationFactory {
+        +createUserAuthentication() OAuthAuthentication
+    }
+    class SsoAuthenticationFactory {
+        +createUserAuthentication() SsoAuthentication
+    }
+    IUserAuthentication <|.. LocalAuthentication:implements
+    IUserAuthentication <|.. OAuthAuthentication:implements
+    IUserAuthentication <|.. SsoAuthentication:implements
+    UserAuthenticationFactory <|-- LocalAuthenticationFactory:extends
+    UserAuthenticationFactory <|-- OAuthAuthenticationFactory:extends
+    UserAuthenticationFactory <|-- SsoAuthenticationFactory:extends
+    IUserAuthentication <.. UserAuthenticationFactory
+```
+
+## Content Management System Factory Method
+```mermaid
+classDiagram
+    class IContentManagement {
+        <<interface>>
+        +createContent() void
+        +editContent() void
+        +deleteContent() void
+    }
+    class BlogContent {
+    }
+    class NewsContent {
+    }
+    class ProductContent {
+    }
+    class ContentManagementFactory {
+        <<abstract>>
+        +createContentManagement() IContentManagement
+    }
+    class BlogContentFactory {
+        +createContentManagement() BlogContent
+    }
+    class NewsContentFactory {
+        +createContentManagement() NewsContent
+    }
+    class ProductContentFactory {
+        +createContentManagement() ProductContent
+    }
+    IContentManagement <|.. BlogContent:implements
+    IContentManagement <|.. NewsContent:implements
+    IContentManagement <|.. ProductContent:implements
+    ContentManagementFactory <|-- BlogContentFactory:extends
+    ContentManagementFactory <|-- NewsContentFactory:extends
+    ContentManagementFactory <|-- ProductContentFactory:extends
+    IContentManagement <.. ContentManagementFactory
 ```
