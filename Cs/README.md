@@ -1,0 +1,106 @@
+## Fundamental Core CS Subjects
+- [ ] Computer Science
+    - [ ] What is Computer Science?
+    - [ ] History of Computer Science
+    - [ ] Branches of Computer Science
+    - [ ] Applications of Computer Science
+    - [ ] Future of Computer Science
+
+- [ ] Mathematics for Computer Science
+    - [ ] Discrete Mathematics
+    - [ ] Linear Algebra
+    - [ ] Calculus
+    - [ ] Probability and Statistics
+- [ ] Data Structures
+    - [ ] Arrays
+    - [ ] Linked Lists
+    - [ ] Stacks and Queues
+    - [ ] Trees
+    - [ ] Graphs
+    - [ ] Hash Tables
+- [ ] Algorithms
+    - [ ] Algorithm Design Techniques
+    - [ ] Sorting Algorithms
+    - [ ] Searching Algorithms
+    - [ ] Graph Algorithms
+    - [ ] Dynamic Programming
+    - [ ] Greedy Algorithms
+- [ ] Operating Systems
+    - [ ] Processes and Threads
+    - [ ] Memory Management
+    - [ ] File Systems
+    - [ ] Input/Output Systems
+    - [ ] Concurrency
+- [ ] Computer Networks
+    - [ ] Network Models
+    - [ ] Protocols
+    - [ ] Network Security
+    - [ ] Internet Architecture
+    - [ ] Wireless Networks
+- [ ] Computer Organization and Architecture
+    - [ ] CPU Architecture
+    - [ ] Memory Hierarchy
+    - [ ] Input/Output Devices
+    - [ ] Assembly Language
+    - [ ] Instruction Set Architecture
+- [ ] Theory of Computation
+    - [ ] Automata Theory
+    - [ ] Formal Languages
+    - [ ] Computability
+    - [ ] Complexity Theory
+- [ ] Cybersecurity
+    - [ ] Cryptography
+    - [ ] Network Security
+    - [ ] Application Security
+    - [ ] System Security
+    - [ ] Ethical Hacking
+- [ ] Programming Paradigms
+    - [ ] Imperative Programming
+    - [ ] Object-Oriented Programming
+    - [ ] Functional Programming
+    - [ ] Logic Programming
+    - [ ] Concurrent Programming
+- [ ] Software Engineering
+    - [ ] Software Development Life Cycle
+    - [ ] Agile Methodologies
+    - [ ] Version Control Systems
+    - [ ] Testing and Debugging
+    - [ ] Software Design Patterns
+
+## Applied CS Subjects
+- [ ] Human-Computer Interaction
+    - [ ] User Interface Design
+    - [ ] User Experience Design
+    - [ ] Usability Testing
+    - [ ] Accessibility
+    - [ ] Interaction Design
+- [ ] Database Systems
+    - [ ] Relational Databases
+    - [ ] NoSQL Databases
+    - [ ] Database Design
+    - [ ] SQL and Query Optimization
+    - [ ] Data Warehousing
+- [ ] Artificial Intelligence
+    - [ ] Machine Learning
+    - [ ] Deep Learning
+    - [ ] Neural Networks
+    - [ ] Natural Language Processing
+    - [ ] Computer Vision
+- [ ] Compiler Design
+    - [ ] Lexical Analysis
+    - [ ] Syntax Analysis
+    - [ ] Semantic Analysis
+    - [ ] Code Generation
+    - [ ] Optimization Techniques
+- [ ] Distributed Systems
+    - [ ] Distributed Computing Models
+    - [ ] Cloud Computing
+    - [ ] Microservices Architecture
+    - [ ] Fault Tolerance
+    - [ ] Scalability
+- [ ] Big Data Analytics
+    - [ ] Data Mining
+    - [ ] Data Visualization
+    - [ ] Big Data Technologies
+    - [ ] Hadoop Ecosystem
+    - [ ] Spark Framework
