@@ -1,0 +1,33 @@
+## Algorithm
+
+- [ ] What is the algorithm?
+- [ ] What is the time complexity?
+- [ ] What is the space complexity?
+- [ ] What is the worst case scenario?
+- [ ] What is the best case scenario?
+- [ ] What is the average case scenario?
+- [ ] Type of algorithm (e.g., greedy, divide and conquer, dynamic programming, etc.)
+- [ ] What is the algorithm's stability?
+- [ ] What is the algorithm's optimality?
+- [ ] What is the algorithm's completeness?
+- [ ] What is the algorithm's soundness?
+- [ ] What is the algorithm's termination condition?
+- [ ] What is the algorithm's correctness?
+- [ ] What is the algorithm's efficiency?
+- [ ] What is the algorithm's scalability?
+- [ ] What is the algorithm's adaptability?
+- [ ] What is the algorithm's robustness?
+- [ ] What is the algorithm's maintainability?
+- [ ] What is the algorithm's extensibility?
+- [ ] What is the algorithm's modularity?
+- [ ] What is the algorithm's reusability?
+- [ ] What is the algorithm's testability?
+- [ ] What is the algorithm's documentation?
+- [ ] What is the algorithm's usability?
+- [ ] What is the algorithm's portability?
+- [ ] What is the algorithm's readability?
+- [ ] What is the algorithm's performance?
+- [ ] What is the algorithm's security?
+- [ ] What is the algorithm's privacy?
+- [ ] What is the algorithm's compliance?
+- [ ] What is the algorithm's interoperability?
