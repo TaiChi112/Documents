@@ -1,0 +1,23 @@
+## Operating System
+
+- [ ] What is an Operating System?  
+- [ ] What is Kernel?
+- [ ] History of Operating Systems
+- [ ] Types of Operating Systems
+- [ ] Functions of an Operating System
+- [ ] Operating System Architecture
+- [ ] Process Management
+- [ ] Memory Management
+- [ ] File System Management
+- [ ] Device Management
+- [ ] Security and Protection
+- [ ] Virtualization
+- [ ] Distributed Operating Systems
+- [ ] Real-Time Operating Systems
+- [ ] Operating System Examples (Windows, Linux, macOS, etc.)
+- [ ] Operating System Installation and Configuration
+- [ ] Troubleshooting Common Operating System Issues
+- [ ] Operating System Performance Tuning
+- [ ] Future Trends in Operating Systems
+- [ ] Operating System Resources and Communities
+- [ ] Operating System Certification and Training
