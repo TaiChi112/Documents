@@ -318,3 +318,107 @@
     - [ ] ตัวอย่าง L = { ab, aab, abb, bba, ba } สามารถเขียนเป็น Regular Expression ได้ว่า "(a|b)*ab(a|b)*"
 
   - ใช่เเล้ว เราจะ design DFA จากอะไรเเปลกๆ ข้างบนนั้นเลย , ก่อนหน้านี้เรา design DFA โดยที่มีข้อมูลที่เรามีครบทั้ง (5-tuple) แต่ตอนนี้เราจะ design DFA โดยที่มีข้อมูลไม่ครบทั้ง (5-tuple) เช่น เราอาจจะมีแค่ Q, Σ, δ, q0, F หรือ Q, Σ, δ, q0 หรือ Q, Σ, δ หรือ Q, Σ หรือ Q เท่านั้น
+
+- [ ] สมมติถ้าเรามี set แบบบอกเงื่อนไขของสมาชิก
+  - [ ] L1 = { x ∈ {a,b}* | x ขึ้นต้นด้วย ab }
+  - [ ] L1 = { x ∈ {a,b}* | x ลงท้ายด้วย ab }
+  - [ ] L1 = { x ∈ {a,b}* | x มี ab เป็นส่วนประกอบ }
+  - [ ] L1 = { x ∈ {a}* | n1(x)/3 ลงตัว || จำนวน a ใน x หาร 3 ลงตัว }
+  - [ ] L1 = { x ∈ {a,b}* | x มีจำนวน a เท่ากับจำนวน b }
+  - [ ] L1 = { x ∈ {a,b}* | x มีจำนวน a มากกว่าหรือเท่ากับจำนวน b }
+  - [ ] L1 = { x ∈ {a,b}* | x มีจำนวน a น้อยกว่าหรือเท่ากับจำนวน b }
+  - [ ] L1 = { x ∈ {a,b}* | x มีจำนวน a มากกว่าจำนวน b }
+  - [ ] L1 = { x ∈ {a,b}* | x มีจำนวน a น้อยกว่าจำนวน b }
+
+- การที่เห็น set ที่มี condition แบบนี้ เราควร Design DFA ได้เเล้วนะ 
+  - [ ] L1 = { x ∈ {a,b}* | x ขึ้นต้นด้วย ab }
+    - [ ] Q: set of states -> {q0, q1, q2}
+    - [ ] Σ: input alphabet -> {a, b}
+    - [ ] δ: transition function
+      - δ(q0, a) = q1
+      - δ(q0, b) = q2
+      - δ(q1, a) = q1
+      - δ(q1, b) = q2
+      - δ(q2, a) = q1
+      - δ(q2, b) = q2
+    - [ ] q0: initial state
+    - [ ] F: set of accept states {q1, q2}
+    - [ ] graph mermaid ไม่ถูกต้องต้องเเก้ไข
+    - ```mermaid
+      graph LR
+        q0((q0)) -->|a| q1
+        q0 -->|b| q2
+        q1(((q1))) -->|a| q1
+        q1 -->|b| q2
+        q2((q2)) -->|a| q1
+        q2 -->|b| q2
+      ```
+  - [ ] L1 = { x ∈ {a,b}* | x ลงท้ายด้วย ab }
+    - [ ] Q: set of states -> {q0, q1, q2}
+    - [ ] Σ: input alphabet -> {a, b}
+    - [ ] δ: transition function
+      - δ(q0, a) = q1
+      - δ(q0, b) = q2
+      - δ(q1, a) = q1
+      - δ(q1, b) = q2
+      - δ(q2, a) = q1
+      - δ(q2, b) = q2
+    - [ ] q0: initial state
+    - [ ] F: set of accept states {q1, q2}
+    - [ ] graph mermaid ไม่ถูกต้องต้องเเก้ไข
+    - ```mermaid
+      graph LR
+        q0((q0)) -->|a| q1
+        q0 -->|b| q2
+        q1(((q1))) -->|a| q1
+        q1 -->|b| q2
+        q2((q2)) -->|a| q1
+        q2 -->|b| q2
+      ```
+
+- จากตัวอย่างข้างบน ทุกคนจะเห็นกรณีรูปเเบบ set ที่มี condition ของสมาชิก เราสามารถ Design DFA ได้เลย
+- [ ] ต่อไปเราจะมาฝึก Design DFA Regular Expression กัน
+  - [ ] Regular Expression ที่เราคุ้นเคยกันดี เช่น
+    - [ ] (a|b)*ab(a|b)*
+    - [ ] (a|b)*aa(a|b)*
+    - [ ] (a|b)*bb(a|b)*
+    - [ ] (a|b)*ab(a|b)*ab(a|b)*
+    - [ ] (a|b)*aa(a|b)*aa(a|b)*
+    - [ ] (a|b)*bb(a|b)*bb(a|b)*
+  - [ ] เราสามารถ Design DFA ได้จาก Regular Expression เหล่านี้ได้เลย
+
+- [ ] ต่อไปเราจะมาฝึก Design DFA จาก set ที่มีสมาชิก
+  - [ ] L1 = { ab, aab, abb, bba, ba }
+    - [ ] Q: set of states -> {q0, q1, q2, q3, q4}
+    - [ ] Σ: input alphabet -> {a, b}
+    - [ ] δ: transition function
+      - δ(q0, a) = q1
+      - δ(q0, b) = q2
+      - δ(q1, a) = q3
+      - δ(q1, b) = q4
+      - δ(q2, a) = q3
+      - δ(q2, b) = q4
+      - δ(q3, a) = q3
+      - δ(q3, b) = q4
+      - δ(q4, a) = q3
+      - δ(q4, b) = q4
+    - [ ] q0: initial state
+    - [ ] F: set of accept states {q1, q2}
+    - [ ] graph mermaid ไม่ถูกต้องต้องเเก้ไข
+    - ```mermaid
+      graph LR
+        q0((q0)) -->|a| q1
+        q0 -->|b| q2
+        q1(((q1))) -->|a| q3
+        q1 -->|b| q4
+        q2((q2)) -->|a| q3
+        q2 -->|b| q4
+        q3(((q3))) -->|a| q3
+        q3 -->|b| q4
+        q4((q4)) -->|a| q3
+        q4 -->|b| q4
+      ```
+
+- ทั้งหมดเป็นตัวอย่างการ Design DFA จากข้อมูลที่เรามี ไม่ว่าจะเป็น set ที่มี condition ของสมาชิก, Regular Expression หรือ set ที่มีสมาชิก เเบบคร่าวๆ
+
+
