@@ -1,74 +1,5 @@
 ## Theory of Computation
-
-- [ ] What is Theory of Computation?
-- [ ] What is FA (Finite Automata)?
-  - [ ] What is DFA (Deterministic Finite Automata)?
-  - [ ] What is NFA (Nondeterministic Finite Automata)?
-  - [ ] What is ε-NFA (Epsilon Nondeterministic Finite Automata)?
-- [ ] What is PA (Pushdown Automata)?
-  - [ ] What is PDA (Pushdown Automata with Stack)?
-  - [ ] What is NPDA (Nondeterministic Pushdown Automata)?
-  - [ ] What is DPDA (Deterministic Pushdown Automata)?
-  - [ ] What is LBA (Linear Bounded Automata)?
-- [ ] What is TM (Turing Machine)?
-  - [ ] What is DTM (Deterministic Turing Machine)?
-  - [ ] What is NTM (Nondeterministic Turing Machine)?
-  - [ ] What is ATM (Alternating Turing Machine)?
-- [ ] What is Computability?
-- [ ] What is Complexity?
-- [ ] What is P (Polynomial Time)?
-- [ ] What is NP (Nondeterministic Polynomial Time)?
-- [ ] What is NP-Complete?
-- [ ] What is NP-Hard?
-- [ ] What is PSPACE?
-- [ ] What is EXPTIME?
-- [ ] What is L (Logarithmic Space)?
-- [ ] What is CFG (Context-Free Grammar)?
-- [ ] What is Regular Expression?
-- [ ] Convert FA to Regular Expression
-- [ ] Convert Regular Expression to FA
-- [ ] What is Chomsky Hierarchy?
-- [ ] What is Pumping Lemma?
-- [ ] What is Closure Properties of Languages?
-- [ ] What is Decidability?
-- [ ] What is Undecidability?
-
-- [ ] ลองเขียน DFA, NFA, ε-NFA, PDA, NPDA, DPDA, TM, DTM, NTM, ATM ด้วยตัวเอง
-- [ ] ลองเขียน Regular Expression ด้วยตัวเอง
-- [ ] ลองเขียน CFG ด้วยตัวเอง
-
-- [ ] ลองเขียนโปรแกรมที่สามารถจำลองการทำงานของ FA, PA, TM ได้
-- [ ] ลองเขียนโปรแกรมที่สามารถตรวจสอบว่า FA, PA, TM
-- [ ] ลองเขียนโปรแกรมที่สามารถแปลง FA เป็น Regular Expression และกลับกัน
-- [ ] ลองเขียนโปรแกรมที่สามารถแปลง Regular Expression เป็น FA และกลับกัน
-- [ ] ลองเขียนโปรแกรมที่สามารถแปลง CFG เป็น PDA และกลับกัน
-- [ ] ลองเขียนโปรแกรมที่สามารถแปลง PDA เป็น CFG และกลับกัน
-- [ ] ลองเขียนโปรแกรมที่สามารถแปลง TM เป็น DTM และกลับกัน
-- [ ] ลองเขียนโปรแกรมที่สามารถแปลง DTM เป็น NTM และกลับกัน
-- [ ] ลองเขียนโปรแกรมที่สามารถแปลง NTM เป็น TM และกลับกัน
-- [ ] ลองเขียนโปรแกรมที่สามารถแปลง ATM เป็น DTM และกลับกัน
-- [ ] ลองเขียนโปรแกรมที่สามารถแปลง DTM เป็น ATM และกลับกัน
-- [ ] ลองเขียนโปรแกรมที่สามารถแปลง ATM เป็น NTM และกลับกัน
-- [ ] ลองเขียนโปรแกรมที่สามารถแปลง NTM เป็น ATM และกลับกัน
-- [ ] ลองเขียนโปรแกรมที่สามารถแปลง ATM เป็น PA และกลับกัน
-- [ ] ลองเขียนโปรแกรมที่สามารถแปลง PA เป็น ATM และกลับกัน
-- [ ] ลองเขียนโปรแกรมที่สามารถแปลง PA เป็น NFA และกลับกัน
-- [ ] ลองเขียนโปรแกรมที่สามารถแปลง NFA เป็น PA และกลับกัน
-- [ ] ลองเขียนโปรแกรมที่สามารถแปลง NFA เป็น DFA และกลับกัน
-- [ ] ลองเขียนโปรแกรมที่สามารถแปลง DFA เป็น NFA และกลับกัน
-- [ ] ลองเขียนโปรแกรมที่สามารถแปลง DFA เป็น ε-NFA และกลับกัน
-- [ ] ลองเขียนโปรแกรมที่สามารถแปลง ε-NFA เป็น DFA และกลับกัน
-- [ ] ลองเขียนโปรแกรมที่สามารถแปลง ε-NFA เป็น NFA และกลับกัน
-- [ ] ลองเขียนโปรแกรมที่สามารถแปลง NFA เป็น ε-NFA และกลับกัน
-- [ ] ลองเขียนโปรแกรมที่สามารถแปลง ε-NFA เป็น Regular Expression และกลับกัน
-- [ ] ลองเขียนโปรแกรมที่สามารถแปลง Regular Expression เป็น ε-NFA และกลับกัน
-- [ ] ลองเขียนโปรแกรมที่สามารถแปลง Regular Expression เป็น DFA และกลับกัน
-- [ ] ลองเขียนโปรแกรมที่สามารถแปลง DFA เป็น Regular Expression และกลับกัน
-- [ ] ลองเขียนโปรแกรมที่สามารถแปลง Regular Expression เป็น NFA และกลับกัน
-- [ ] ลองเขียนโปรแกรมที่สามารถแปลง NFA เป็น Regular Expression และกลับกัน
-- [ ] ลองเขียนโปรแกรมที่สามารถแปลง Regular Expression เป็น CFG และกลับกัน
-- [ ] ลองเขียนโปรแกรมที่สามารถแปลง CFG เป็น Regular Expression และกลับกัน
-
+[Topic about Theory of Computation](Topic.md)
 # DFA Diagram Example
 - [x] ลองเขียน DFA Diagram กรณีที่เรามีข้อมูลครบทั้ง (5-tuple)
   - Q: set of states -> {q0, q1, q2, q3}
@@ -371,3 +302,19 @@
     - [ ] DFA จะต้องสามารถยอมรับหรือปฏิเสธสตริงได้อย่างชัดเจน
     - [ ] DFA จะต้องสามารถทำงานได้ในเวลา O(n) สำหรับสตริงที่มีความยาว n
     - [ ] DFA จะต้องสามารถทำงานได้ในพื้นที่ O(1) สำหรับสตริงที่มีความยาว n
+
+    - [ ] จำนวนทางเดินของ DFA สามารถหาได้จาก 
+      - [ ] |Q|^|Σ| = จำนวนทางเดินของ DFA
+      - [ ] |Q| = จำนวนสถานะของ DFA
+      - [ ] |Σ| = ขนาดของ input alphabet
+
+- การ Design DFA เพื่อนิยาม Regular Language ที่คุ้นๆ อยู่ตอนนี้จะมีอยู่ 2 เเบบ
+  - [ ] เป็นเเบบ set แบบบอกเงื่อนไขของสมาชิก
+    - [ ] ตัวอย่าง L = { x ∈ {a,b}* | x ขึ้นต้นด้วย ab }
+  - [ ] เป็นเเบบ set แบบบอกสมาชิก
+    - [ ] ตัวอย่าง L = { ab, aab, abb, bba, ba }
+  - [ ] อีกเเบบหนึ่ง คือ Regular Expression ที่นิยาม Regular Language
+    - [ ] ตัวอย่าง L = { x ∈ {a,b}* | x ขึ้นต้นด้วย ab } สามารถเขียนเป็น Regular Expression ได้ว่า "ab(a|b)*"
+    - [ ] ตัวอย่าง L = { ab, aab, abb, bba, ba } สามารถเขียนเป็น Regular Expression ได้ว่า "(a|b)*ab(a|b)*"
+
+  - ใช่เเล้ว เราจะ design DFA จากอะไรเเปลกๆ ข้างบนนั้นเลย , ก่อนหน้านี้เรา design DFA โดยที่มีข้อมูลที่เรามีครบทั้ง (5-tuple) แต่ตอนนี้เราจะ design DFA โดยที่มีข้อมูลไม่ครบทั้ง (5-tuple) เช่น เราอาจจะมีแค่ Q, Σ, δ, q0, F หรือ Q, Σ, δ, q0 หรือ Q, Σ, δ หรือ Q, Σ หรือ Q เท่านั้น
