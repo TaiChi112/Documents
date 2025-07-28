@@ -25,3 +25,10 @@
 - [ ] What is L (Logarithmic Space)?
 - [ ] What is CFG (Context-Free Grammar)?
 - [ ] What is Regular Expression?
+- [ ] Convert FA to Regular Expression
+- [ ] Convert Regular Expression to FA
+- [ ] What is Chomsky Hierarchy?
+- [ ] What is Pumping Lemma?
+- [ ] What is Closure Properties of Languages?
+- [ ] What is Decidability?
+- [ ] What is Undecidability?
