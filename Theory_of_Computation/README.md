@@ -1,0 +1,27 @@
+## Theory of Computation
+
+- [ ] What is Theory of Computation?
+- [ ] What is FA (Finite Automata)?
+  - [ ] What is DFA (Deterministic Finite Automata)?
+  - [ ] What is NFA (Nondeterministic Finite Automata)?
+  - [ ] What is ε-NFA (Epsilon Nondeterministic Finite Automata)?
+- [ ] What is PA (Pushdown Automata)?
+  - [ ] What is PDA (Pushdown Automata with Stack)?
+  - [ ] What is NPDA (Nondeterministic Pushdown Automata)?
+  - [ ] What is DPDA (Deterministic Pushdown Automata)?
+  - [ ] What is LBA (Linear Bounded Automata)?
+- [ ] What is TM (Turing Machine)?
+  - [ ] What is DTM (Deterministic Turing Machine)?
+  - [ ] What is NTM (Nondeterministic Turing Machine)?
+  - [ ] What is ATM (Alternating Turing Machine)?
+- [ ] What is Computability?
+- [ ] What is Complexity?
+- [ ] What is P (Polynomial Time)?
+- [ ] What is NP (Nondeterministic Polynomial Time)?
+- [ ] What is NP-Complete?
+- [ ] What is NP-Hard?
+- [ ] What is PSPACE?
+- [ ] What is EXPTIME?
+- [ ] What is L (Logarithmic Space)?
+- [ ] What is CFG (Context-Free Grammar)?
+- [ ] What is Regular Expression?
