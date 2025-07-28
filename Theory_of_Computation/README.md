@@ -69,3 +69,117 @@
 - [ ] ลองเขียนโปรแกรมที่สามารถแปลง Regular Expression เป็น CFG และกลับกัน
 - [ ] ลองเขียนโปรแกรมที่สามารถแปลง CFG เป็น Regular Expression และกลับกัน
 
+# DFA Diagram Example
+- [x] ลองเขียน DFA Diagram กรณีที่เรามีข้อมูลครบทั้ง (5-tuple)
+  - Q: set of states -> {q0, q1, q2, q3}
+  - Σ: input alphabet -> {0, 1}
+  - δ: transition function
+    - δ: Q x Σ -> Q
+        - δ(q0, 0) = q0
+        - δ(q0, 1) = q1
+        - δ(q1, 0) = q0
+        - δ(q1, 1) = q2
+        - δ(q2, 0) = q3
+        - δ(q2, 1) = q2
+        - δ(q3, 0) = q3
+        - δ(q3, 1) = q2
+  - q0: initial state 
+  - F: set of accept states {q2,q3}
+  - ```mermaid
+    graph LR
+      q0((q0)) -->|0| q0
+      q0 -->|1| q1
+      q1((q1)) -->|0| q0
+      q1 -->|1| q2
+      q2(((q2))) -->|0| q3
+      q2 -->|1| q2
+      q3(((q3))) -->|0| q3
+      q3 -->|1| q2
+    ```
+- [x] ลองเขียน DFA Diagram กรณีที่เรามีข้อมูลไม่ครบทั้ง (5-tuple)
+  - Q: set of states -> {q0, q1, q2}
+  - Σ: input alphabet -> {0, 1}
+  - δ: transition function
+    - δ: Q x Σ -> Q
+        - δ(q0, 0) = q0
+        - δ(q0, 1) = q1
+        - δ(q1, 0) = q2
+        - δ(q1, 1) = q1
+        - δ(q2, 0) = q2
+        - δ(q2, 1) = q2
+  - q0: initial state
+  - F: set of accept states {q1}
+  - ```mermaid
+    graph LR
+      q0((q0)) -->|0| q0
+      q0 -->|1| q1
+      q1(((q1))) -->|0| q2
+      q1 -->|1| q1
+      q2((q2)) -->|0| q2
+      q2 -->|1| q2
+    ```
+- [x] คำถามคือ หลังจากที่เรารู้ส่วนประกอบของ DFA แล้วสร้าง Diagram ตามข้อมูลที่เรามีจะเอาไปทำอะไรต่อ
+  - คำตอบคือ เราสามารถใช้ Diagram นี้ในการวิเคราะห์การทำงานของ DFA ได้ เช่น การตรวจสอบว่า DFA นี้สามารถยอมรับสตริงใดบ้าง หรือการวิเคราะห์ความซับซ้อนของ DFA ในการประมวลผลสตริงต่างๆ
+  - นอกจากนี้ยังสามารถใช้ Diagram นี้ในการแปลง DFA เป็นรูปแบบอื่นๆ เช่น NFA หรือ ε-NFA ได้อีกด้วย
+  - ตัวอย่างการตรวจสอบว่า DFA นี้สามารถยอมรับสตริง "0101" ได้หรือไม่
+    - เริ่มจากสถานะ q0
+    - อ่าน 0: ยังคงอยู่ที่ q0
+    - อ่าน 1: ย้ายไปที่ q1
+    - อ่าน 0: ย้ายไปที่ q2
+    - อ่าน 1: ยังคงอยู่ที่ q2
+    - สตริง "0101" ถูกยอมรับเพราะสิ้นสุดที่สถานะ accept state (q2)
+    - ดังนั้น DFA นี้สามารถยอมรับสตริง "0101" ได้
+  - ตัวอย่างการตรวจสอบว่า DFA นี้สามารถยอมรับสตริง "001" ได้หรือไม่
+    - เริ่มจากสถานะ q0
+    - อ่าน 0: ยังคงอยู่ที่ q0
+    - อ่าน 0: ยังคงอยู่ที่ q0
+    - อ่าน 1: ย้ายไปที่ q1
+    - สตริง "001" ไม่ถูกยอมรับเพราะสิ้นสุดที่สถานะ q1 ซึ่งไม่ใช่ accept state
+    - ดังนั้น DFA นี้ไม่สามารถยอมรับสตริง "001" ได้
+  - นอกจากนี้ยังสามารถใช้ Diagram นี้ในการวิเคราะห์ความซับซ้อนของ DFA ได้ เช่น การนับจำนวนสถานะและการเปลี่ยนแปลงของสถานะในแต่ละการอ่านสัญลักษณ์จาก input alphabet
+  - การวิเคราะห์นี้สามารถช่วยในการปรับปรุงประสิทธิภาพของ DFA และการออกแบบ DFA ที่มีประสิทธิภาพมากขึ้นได้
+  - ตัวอย่างการวิเคราะห์ความซับซ้อนของ DFA นี้
+    - จำนวนสถานะ: 3 (q0, q1, q2)
+    - จำนวนการเปลี่ยนแปลงสถานะ: 6 (จาก q0 ไป q0, q0 ไป q1, q1 ไป q2, q1 ไป q1, q2 ไป q2, q2 ไป q2)
+    - ความซับซ้อนของ DFA นี้ค่อนข้างต่ำ เนื่องจากมีจำนวนสถานะและการเปลี่ยนแปลงสถานะน้อย
+    - การวิเคราะห์นี้สามารถช่วยในการออกแบบ DFA ที่มีประสิทธิภาพมากขึ้นได้ เช่น การลดจำนวนสถานะและการเปลี่ยนแปลงสถานะให้ต่ำที่สุด
+    - นอกจากนี้ยังสามารถใช้เทคนิคต่างๆ เช่น การรวมสถานะที่มีการเปลี่ยนแปลงเหมือนกัน หรือการลบสถานะที่ไม่จำเป็นออกจาก DFA เพื่อปรับปรุงประสิทธิภาพของ DFA ได้อีกด้วย
+    - การวิเคราะห์นี้ยังสามารถช่วยในการออกแบบ DFA ที่สามารถยอมรับสตริงที่มีรูปแบบเฉพาะได้ เช่น การยอมรับสตริงที่มีจำนวน 0 และ 1 เท่ากัน หรือการยอมรับสตริงที่มีรูปแบบเฉพาะเช่น "ab", "ba" เป็นต้น
+  - นอกจากนี้ยังสามารถใช้ Diagram นี้ในการสร้างเครื่องมือที่สามารถจำลองการทำงานของ DFA ได้ เช่น การสร้างโปรแกรมที่สามารถรับ input string และตรวจสอบว่า DFA นี้สามารถยอมรับสตริงนั้นได้หรือไม่
+  - การสร้างเครื่องมือดังกล่าวสามารถช่วยในการศึกษาและเข้าใจการทำงานของ DFA ได้ดีขึ้น และสามารถใช้ในการสอนหรือการเรียนรู้เกี่ยวกับทฤษฎีของการคำนวณได้
+  - ตัวอย่างการสร้างโปรแกรมที่สามารถจำลองการทำงานของ DFA นี้
+    ```python
+    class DFA:
+        def __init__(self, states, alphabet, transition_function, initial_state, accept_states):
+            self.states = states
+            self.alphabet = alphabet
+            self.transition_function = transition_function
+            self.initial_state = initial_state
+            self.accept_states = accept_states
+
+        def accepts(self, input_string):
+            current_state = self.initial_state
+            for symbol in input_string:
+                if symbol not in self.alphabet:
+                    return False  # Invalid symbol
+                current_state = self.transition_function[current_state][symbol]
+            return current_state in self.accept_states
+
+    # Define the DFA components
+    states = {'q0', 'q1', 'q2'}
+    alphabet = {'0', '1'}
+    transition_function = {
+        'q0': {'0': 'q0', '1': 'q1'},
+        'q1': {'0': 'q2', '1': 'q1'},
+        'q2': {'0': 'q2', '1': 'q2'}
+    }
+    initial_state = 'q0'
+    accept_states = {'q1'}
+
+    # Create the DFA instance
+    dfa = DFA(states, alphabet, transition_function, initial_state, accept_states)
+
+    # Test the DFA with an input string
+    test_string = "010"
+    print(f"The string '{test_string}' is accepted by the DFA: {dfa.accepts(test_string)}")
+    ```
