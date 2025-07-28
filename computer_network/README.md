@@ -12,3 +12,8 @@
 - [ ] Subnetting
 - [ ] Network Troubleshooting
 - [ ] Network Performance
+- [ ] OSI Model
+- [ ] TCP/IP Model
+- [ ] Network Monitoring
+- [ ] วิธีการวัด delay ในเครือข่าย
+- [ ] What is Network Latency? 
