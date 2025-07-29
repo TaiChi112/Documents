@@ -1,0 +1,70 @@
+[Go back to README.md](README.md)
+
+- [ ] What is Theory of Computation?
+- [ ] What is FA (Finite Automata)?
+  - [ ] What is DFA (Deterministic Finite Automata)?
+  - [ ] What is NFA (Nondeterministic Finite Automata)?
+  - [ ] What is ε-NFA (Epsilon Nondeterministic Finite Automata)?
+- [ ] What is PA (Pushdown Automata)?
+  - [ ] What is PDA (Pushdown Automata with Stack)?
+  - [ ] What is NPDA (Nondeterministic Pushdown Automata)?
+  - [ ] What is DPDA (Deterministic Pushdown Automata)?
+  - [ ] What is LBA (Linear Bounded Automata)?
+- [ ] What is TM (Turing Machine)?
+  - [ ] What is DTM (Deterministic Turing Machine)?
+  - [ ] What is NTM (Nondeterministic Turing Machine)?
+  - [ ] What is ATM (Alternating Turing Machine)?
+- [ ] What is Computability?
+- [ ] What is Complexity?
+- [ ] What is P (Polynomial Time)?
+- [ ] What is NP (Nondeterministic Polynomial Time)?
+- [ ] What is NP-Complete?
+- [ ] What is NP-Hard?
+- [ ] What is PSPACE?
+- [ ] What is EXPTIME?
+- [ ] What is L (Logarithmic Space)?
+- [ ] What is CFG (Context-Free Grammar)?
+- [ ] What is Regular Expression?
+- [ ] Convert FA to Regular Expression
+- [ ] Convert Regular Expression to FA
+- [ ] What is Chomsky Hierarchy?
+- [ ] What is Pumping Lemma?
+- [ ] What is Closure Properties of Languages?
+- [ ] What is Decidability?
+- [ ] What is Undecidability?
+
+- [ ] ลองเขียน DFA, NFA, ε-NFA, PDA, NPDA, DPDA, TM, DTM, NTM, ATM ด้วยตัวเอง
+- [ ] ลองเขียน Regular Expression ด้วยตัวเอง
+- [ ] ลองเขียน CFG ด้วยตัวเอง
+
+- [ ] ลองเขียนโปรแกรมที่สามารถจำลองการทำงานของ FA, PA, TM ได้
+- [ ] ลองเขียนโปรแกรมที่สามารถตรวจสอบว่า FA, PA, TM
+- [ ] ลองเขียนโปรแกรมที่สามารถแปลง FA เป็น Regular Expression และกลับกัน
+- [ ] ลองเขียนโปรแกรมที่สามารถแปลง Regular Expression เป็น FA และกลับกัน
+- [ ] ลองเขียนโปรแกรมที่สามารถแปลง CFG เป็น PDA และกลับกัน
+- [ ] ลองเขียนโปรแกรมที่สามารถแปลง PDA เป็น CFG และกลับกัน
+- [ ] ลองเขียนโปรแกรมที่สามารถแปลง TM เป็น DTM และกลับกัน
+- [ ] ลองเขียนโปรแกรมที่สามารถแปลง DTM เป็น NTM และกลับกัน
+- [ ] ลองเขียนโปรแกรมที่สามารถแปลง NTM เป็น TM และกลับกัน
+- [ ] ลองเขียนโปรแกรมที่สามารถแปลง ATM เป็น DTM และกลับกัน
+- [ ] ลองเขียนโปรแกรมที่สามารถแปลง DTM เป็น ATM และกลับกัน
+- [ ] ลองเขียนโปรแกรมที่สามารถแปลง ATM เป็น NTM และกลับกัน
+- [ ] ลองเขียนโปรแกรมที่สามารถแปลง NTM เป็น ATM และกลับกัน
+- [ ] ลองเขียนโปรแกรมที่สามารถแปลง ATM เป็น PA และกลับกัน
+- [ ] ลองเขียนโปรแกรมที่สามารถแปลง PA เป็น ATM และกลับกัน
+- [ ] ลองเขียนโปรแกรมที่สามารถแปลง PA เป็น NFA และกลับกัน
+- [ ] ลองเขียนโปรแกรมที่สามารถแปลง NFA เป็น PA และกลับกัน
+- [ ] ลองเขียนโปรแกรมที่สามารถแปลง NFA เป็น DFA และกลับกัน
+- [ ] ลองเขียนโปรแกรมที่สามารถแปลง DFA เป็น NFA และกลับกัน
+- [ ] ลองเขียนโปรแกรมที่สามารถแปลง DFA เป็น ε-NFA และกลับกัน
+- [ ] ลองเขียนโปรแกรมที่สามารถแปลง ε-NFA เป็น DFA และกลับกัน
+- [ ] ลองเขียนโปรแกรมที่สามารถแปลง ε-NFA เป็น NFA และกลับกัน
+- [ ] ลองเขียนโปรแกรมที่สามารถแปลง NFA เป็น ε-NFA และกลับกัน
+- [ ] ลองเขียนโปรแกรมที่สามารถแปลง ε-NFA เป็น Regular Expression และกลับกัน
+- [ ] ลองเขียนโปรแกรมที่สามารถแปลง Regular Expression เป็น ε-NFA และกลับกัน
+- [ ] ลองเขียนโปรแกรมที่สามารถแปลง Regular Expression เป็น DFA และกลับกัน
+- [ ] ลองเขียนโปรแกรมที่สามารถแปลง DFA เป็น Regular Expression และกลับกัน
+- [ ] ลองเขียนโปรแกรมที่สามารถแปลง Regular Expression เป็น NFA และกลับกัน
+- [ ] ลองเขียนโปรแกรมที่สามารถแปลง NFA เป็น Regular Expression และกลับกัน
+- [ ] ลองเขียนโปรแกรมที่สามารถแปลง Regular Expression เป็น CFG และกลับกัน
+- [ ] ลองเขียนโปรแกรมที่สามารถแปลง CFG เป็น Regular Expression และกลับกัน
