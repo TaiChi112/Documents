@@ -1,4 +1,4 @@
 # AI Documentations
-- [x] [task3](task3.md)
+- [x] [task3](docs/task3.md)
 
-- [ ] [changellenge](changellenge.md)
+- [ ] [changellenge](docs/changellenge.md)
