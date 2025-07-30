@@ -1,0 +1,48 @@
+{
+    "Customers": {
+        "id": "",
+        "name": "",
+        "email": "",
+        "password": "",
+        "createAt": "",
+        "updateAt": "",
+        "number": "",
+        "address": {
+            "province": "",
+            "district": "",
+            "Subdistrict": "",
+            "zipCode": ""
+        },
+        "cart": [
+            {
+                "product": {
+                    "id": "",
+                    "name": "",
+                    "cost": "",
+                    "description": "",
+                    "createAt": "",
+                    "updateAt": ""
+                }
+            }
+        ]
+    },
+    "Products": {
+        "id": "",
+        "name": "",
+        "price": "",
+        "description": "",
+        "createAt": "",
+        "updateAt": ""
+    },
+    "Cart": {
+        "id":"",
+        "product": {
+            "product_id": "",
+            "name": "",
+            "cost": "",
+            "description": "",
+            "createAt": "",
+            "updateAt": ""
+        }
+    }
+}
