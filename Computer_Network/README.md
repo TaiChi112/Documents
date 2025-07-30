@@ -4,7 +4,6 @@
 - [ ] Types of Computer Networks
 - [ ] Network Topologies
 - [ ] Network Protocols
-- [ ] Network Devices
 - [ ] Network Security
 - [ ] What is Internet?
 - [ ] Internet Protocols
