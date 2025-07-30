@@ -1,3 +1,5 @@
 # Design Patterns
 
-[**factory method**](factory_method.md)
+[**factory method**](docs/factory_method.md)
+
+[**abstract factory**](docs/abstract_factory.md)
