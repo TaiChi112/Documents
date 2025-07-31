@@ -3,7 +3,11 @@ classDiagram
 %%{
     init: {
     'themeVariables': {
-      'lineColor': '#0f0'
+      'lineColor': '#0f0',
+      'primaryColor': '#ff0000',
+      'primaryTextColor': '#000000',
+      'primaryBorderColor': '#ff0000',
+      'relationColor': '#ff6600'
     }
   }
 }%%
@@ -33,9 +37,9 @@ classDiagram
     FriedBanana --|> Banana: implements
     StirBanana --|> Banana: implements
     SyrupBanana --|> Banana: implements
-    FriedFruitFactory --|> FriedBanana
-    StirFruitFactory --|> StirBanana
-    SyrupFruitFactory --|> SyrupBanana
+    FriedFruitFactory ..> FriedBanana : creates
+    StirFruitFactory ..> StirBanana : creates
+    SyrupFruitFactory ..> SyrupBanana : creates
     
     namespace Scope3 {
         class FriedTaro
@@ -46,22 +50,22 @@ classDiagram
     FriedTaro --|> Taro: implements
     StirTaro --|> Taro: implements
     SyrupTaro --|> Taro: implements
-    FriedFruitFactory --|> FriedTaro
-    StirFruitFactory --|> StirTaro
-    SyrupFruitFactory --|> SyrupTaro
+    FriedFruitFactory ..> FriedTaro
+    StirFruitFactory ..> StirTaro
+    SyrupFruitFactory ..> SyrupTaro
 
     namespace Scope4 {
         class FriedDurian
         class StirDurian
         class SyrupDurian
         class Durian
-
     }
+
     FriedDurian --|> Durian: implements
     StirDurian --|> Durian: implements
     SyrupDurian --|> Durian: implements
-    FriedFruitFactory --|> FriedDurian
-    StirFruitFactory --|> StirDurian
-    SyrupFruitFactory --|> SyrupDurian
+    FriedFruitFactory ..> FriedDurian
+    StirFruitFactory ..> StirDurian
+    SyrupFruitFactory ..> SyrupDurian
 
 ```
