@@ -9,13 +9,18 @@ classDiagram
         <<interface>>
         +attack() void
         +defend() void
-        +useSkill() void
     }
     class Warrior {
+        +attack() void
+        +defend() void
     }
     class Mage {
+        +attack() void
+        +defend() void
     }
     class Archer {
+        +attack() void
+        +defend() void
     }
     class CharacterFactory {
         <<abstract>>
@@ -30,11 +35,11 @@ classDiagram
     class ArcherFactory {
         +createCharacter() Archer
     }
+    ICharacter <.. CharacterFactory
     ICharacter <|.. Warrior:implements
     ICharacter <|.. Mage:implements
     ICharacter <|.. Archer:implements
     CharacterFactory <|-- WarriorFactory:extends
     CharacterFactory <|-- MageFactory:extends
     CharacterFactory <|-- ArcherFactory:extends
-    ICharacter <.. CharacterFactory
 ```
