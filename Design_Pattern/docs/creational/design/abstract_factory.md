@@ -1,102 +1,145 @@
-|          |        |      |        |
-| -------- | ------ | ---- | ------ |
-|          | banane | taro | durian |
-| fry      |        |      |        |
-| stir     |        |      |        |
-| in-syrup |        |      |        |
-
-#
 ```mermaid
 classDiagram
-        direction TD
-            class FruitFactory {
-            <<interface>>
-            +createBanana() Banana
-            +createTaro() Taro
-            +createDurian() Durian
-            }
-            class FriedFruitFactory {
-                +createBanana() FriedBanana
-                +createTaro() FriedTaro
-                +createDurian() FriedDurian
-            }
-            class StirFruitFactory {
-                +createBanana() StirBanana
-                +createTaro() StirTaro
-                +createDurian() StirDurian
-            }
-            class SyrupFruitFactory {
-                +createBanana() SyrupBanana
-                +createTaro() SyrupTaro
-                +createDurian() SyrupDurian
-            }
-            FruitFactory <|-- FriedFruitFactory
-            FruitFactory <|-- StirFruitFactory
-            FruitFactory <|-- SyrupFruitFactory
-            
-
-        FriedFruitFactory <|-- FriedBanana
-        FriedFruitFactory <|-- FriedTaro
-        FriedFruitFactory <|-- FriedDurian
-
-        StirFruitFactory <|-- StirBanana
-        StirFruitFactory <|-- StirTaro
-        StirFruitFactory <|-- StirDurian
-
-        SyrupFruitFactory <|-- SyrupBanana
-        SyrupFruitFactory <|-- SyrupTaro
-        SyrupFruitFactory <|-- SyrupDurian
-
-        FriedBanana --|> Banana
-        FriedTaro --|> Taro
-        FriedDurian --|> Durian
-
-        class FriedBanana {
-            +cook()
+    class House{
+    }
+    namespace underground_house{
+        class UndergroundHouse{
         }
-        class FriedTaro {
-            +cook()
+    }
+    class Hospital{
+    }
+    namespace space_hospital{
+        class SpaceHospital{
         }
-        class FriedDurian {
-            +cook()
+    }
+    class Canteen{
+    }
+    namespace canteen_in_the_forest{
+        class CanteenInTheForest{
         }
-            class StirBanana {
-            +cook()
-            }
-            class StirTaro {
-                +cook()
-            }
-            class StirDurian {
-                +cook()
-            }
-            StirBanana --|> Banana
-            StirTaro --|> Taro      
-            StirDurian --|> Durian
+    }
+    class School{
+    }
+    namespace school_in_the_sky{
+        class SchoolInTheSky{
+        }
+    }
+    class Hotel{
+    }
+    namespace hotel_in_the_desert{
+        class HotelInTheDesert{
+        }
+    }
+    class University{
+    }
+    namespace under_the_sea_university{
+        class UnderseaUniversity{
+        }
+    }
+    %% House <|-- UndergroundHouse
+    %% Hospital <|-- SpaceHospital
+    %% Canteen <|-- CanteenInTheForest
+    %% School <|-- SchoolInTheSky
+    %% Hotel <|-- HotelInTheDesert
+    %% University <|-- UnderseaUniversity
+    UndergroundHouse ..> House
+    SpaceHospital ..> Hospital
+    CanteenInTheForest ..> Canteen
+    SchoolInTheSky ..> School
+    HotelInTheDesert ..> Hotel
+    UnderseaUniversity ..> University
 
-        
-            class SyrupBanana {
-                +cook()
-            }
-            class SyrupTaro {
-                +cook()
-            }
-            class SyrupDurian {
-                +cook()
-            }
-            SyrupBanana --|> Banana
-            SyrupTaro --|> Taro      
-            SyrupDurian --|> Durian
-        
-        class Banana {
-            <<interface>>
-            +cook()
+    class BuildingFactory{
+        <<interface>>
+        +createHouse() House
+        +createHospital() Hospital
+        +createCanteen() Canteen
+        +createSchool() School
+        +createHotel() Hotel
+        +createUniversity() University
+    }
+    namespace under_the_sea{
+        class UnderTheSeaBuildingFactory{
+            +createHouse() House
+            +createHospital() Hospital
+            +createCanteen() Canteen
+            +createSchool() School
+            +createHotel() Hotel
+            +createUniversity() University
         }
-        class Taro {
-            <<interface>>
-            +cook()
+    }
+    namespace in_the_sky{
+        class InTheSkyBuildingFactory{
+            +createHouse() House
+            +createHospital() Hospital
+            +createCanteen() Canteen
+            +createSchool() School
+            +createHotel() Hotel
+            +createUniversity() University
         }
-        class Durian {
-            <<interface>>
-            +cook()
+    }
+    namespace underground{
+        class UndergroundBuildingFactory{
+            +createHouse() House
+            +createHospital() Hospital
+            +createCanteen() Canteen
+            +createSchool() School
+            +createHotel() Hotel
+            +createUniversity() University
         }
+    }
+    namespace desert{
+        class DesertBuildingFactory{
+            +createHouse() House
+            +createHospital() Hospital
+            +createCanteen() Canteen
+            +createSchool() School
+            +createHotel() Hotel
+            +createUniversity() University
+        }
+    }
+    namespace forest{
+        class ForestBuildingFactory{
+            +createHouse() House
+            +createHospital() Hospital
+            +createCanteen() Canteen
+            +createSchool() School
+            +createHotel() Hotel
+            +createUniversity() University
+        }
+    }
+    namespace space{
+        class SpaceBuildingFactory{
+            +createHouse() House
+            +createHospital() Hospital
+            +createCanteen() Canteen
+            +createSchool() School
+            +createHotel() Hotel
+            +createUniversity() University
+        }
+    }
+    namespace pole_building{
+        class PoleBuildingFactory{
+            +createHouse() House
+            +createHospital() Hospital
+            +createCanteen() Canteen
+            +createSchool() School
+            +createHotel() Hotel
+            +createUniversity() University
+        }
+    }
+    %% BuildingFactory <.. UnderTheSeaBuildingFactory
+    %% BuildingFactory <.. InTheSkyBuildingFactory
+    %% BuildingFactory <.. UndergroundBuildingFactory
+    %% BuildingFactory <.. DesertBuildingFactory
+    %% BuildingFactory <.. ForestBuildingFactory
+    %% BuildingFactory <.. SpaceBuildingFactory
+    %% BuildingFactory <.. PoleBuildingFactory
+    UnderTheSeaBuildingFactory ..> BuildingFactory
+    InTheSkyBuildingFactory ..> BuildingFactory
+    UndergroundBuildingFactory ..> BuildingFactory
+    DesertBuildingFactory ..> BuildingFactory
+    ForestBuildingFactory ..> BuildingFactory
+    SpaceBuildingFactory ..> BuildingFactory
+    PoleBuildingFactory ..> BuildingFactory
 ```
