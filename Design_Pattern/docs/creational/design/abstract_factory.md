@@ -1,5 +1,6 @@
 ```mermaid
 classDiagram
+    direction LR
     class House{
     }
     namespace underground_house{
@@ -68,6 +69,7 @@ classDiagram
             +createUniversity() University
         }
     }
+    UnderTheSeaBuildingFactory ..> UnderseaUniversity
     namespace in_the_sky{
         class InTheSkyBuildingFactory{
             +createHouse() House
@@ -78,6 +80,7 @@ classDiagram
             +createUniversity() University
         }
     }
+    InTheSkyBuildingFactory ..> SchoolInTheSky
     namespace underground{
         class UndergroundBuildingFactory{
             +createHouse() House
@@ -88,6 +91,7 @@ classDiagram
             +createUniversity() University
         }
     }
+    UndergroundBuildingFactory ..> UndergroundHouse
     namespace desert{
         class DesertBuildingFactory{
             +createHouse() House
@@ -98,6 +102,7 @@ classDiagram
             +createUniversity() University
         }
     }
+    DesertBuildingFactory ..> HotelInTheDesert
     namespace forest{
         class ForestBuildingFactory{
             +createHouse() House
@@ -108,6 +113,7 @@ classDiagram
             +createUniversity() University
         }
     }
+    ForestBuildingFactory ..> CanteenInTheForest
     namespace space{
         class SpaceBuildingFactory{
             +createHouse() House
@@ -118,6 +124,7 @@ classDiagram
             +createUniversity() University
         }
     }
+    SpaceBuildingFactory ..> SpaceHospital
     namespace pole_building{
         class PoleBuildingFactory{
             +createHouse() House

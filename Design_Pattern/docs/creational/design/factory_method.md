@@ -26,20 +26,19 @@ classDiagram
         <<abstract>>
         +createCharacter() ICharacter
     }
-    class WarriorFactory {
-        +createCharacter() Warrior
+    class WarriorCharacterFactory {
+        +createCharacter() ICharacter
     }
-    class MageFactory {
-        +createCharacter() Mage
+    class MageCharacterFactory {
+        +createCharacter() ICharacter
     }
-    class ArcherFactory {
-        +createCharacter() Archer
+    class ArcherCharacterFactory {
+        +createCharacter() ICharacter
     }
     ICharacter <.. CharacterFactory
     ICharacter <|.. Warrior:implements
     ICharacter <|.. Mage:implements
     ICharacter <|.. Archer:implements
-    CharacterFactory <|-- WarriorFactory:extends
-    CharacterFactory <|-- MageFactory:extends
-    CharacterFactory <|-- ArcherFactory:extends
-```
+    CharacterFactory <|-- WarriorCharacterFactory:extends
+    CharacterFactory <|-- MageCharacterFactory:extends
+    CharacterFactory <|-- ArcherCharacterFactory:extends
