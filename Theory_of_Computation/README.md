@@ -1,5 +1,5 @@
 ## Theory of Computation
-[Topic about Theory of Computation](Topic.md)
+[Topic about Theory of Computation](docs/Topic.md)
 # DFA Diagram Example
 - [x] ลองเขียน DFA Diagram กรณีที่เรามีข้อมูลครบทั้ง (5-tuple)
   - Q: set of states -> {q0, q1, q2, q3}
