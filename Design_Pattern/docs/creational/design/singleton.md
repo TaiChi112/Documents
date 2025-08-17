@@ -1,11 +1,11 @@
 ```mermaid
 classDiagram
     class WashingMachine {
-        -instance: static WashingMachine
-        +getInstance(): static WashingMachine
+        -instance static WashingMachine
+        +getInstance() static WashingMachine
     }
     class Client {
-        +useMachine(): void
+        +useMachine() void
     }
     WashingMachine <|-- WashingMachine
     Client --> WashingMachine : uses
