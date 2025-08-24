@@ -41,6 +41,11 @@
 - **Singleton Pattern:** จำกัดให้ Component หรือ Object มีเพียงหนึ่ง instance ในระบบ เช่น ตัวจัดการการเชื่อมต่อฐานข้อมูล
 
 ## Component Lifecycle Management
+- **Stage 1: Creation:** การสร้าง Component ใหม่จากแบบแผนหรือแม่แบบที่กำหนด อาจเกิดจากการเขียนโค้ดหรือการสร้างผ่านเครื่องมืออัตโนมัติ
+- **Stage 2: Initialization:** การกำหนดค่าเริ่มต้นและเตรียมความพร้อม เช่น การตั้งค่าพารามิเตอร์ การเชื่อมต่อกับทรัพยากรที่จำเป็น
+- **Stage 3: Utilization:** การนำ Component ไปใช้งานจริงในระบบ เช่น การเรียกใช้ฟังก์ชันหรือบริการที่ Component นั้นให้ไว้
+- **Stage 4: Maintenance:** การบำรุงรักษาและปรับปรุง Component เช่น การแก้ไขข้อผิดพลาด การอัปเดตฟีเจอร์ หรือการปรับปรุงประสิทธิภาพ
+- **Stage 5: Decommissioning:** การเลิกใช้งาน Component เมื่อหมดอายุหรือไม่จำเป็นต้องใช้แล้ว รวมถึงการลบออกจากระบบและจัดการทรัพยากรที่เกี่ยวข้อง
 
 ## Tools and Technologies for Component Design
 - **UML Tools:** เช่น Enterprise Architect, Visual Paradigm, StarUML สำหรับออกแบบและสร้างแผนภาพคอมโพเนนท์
