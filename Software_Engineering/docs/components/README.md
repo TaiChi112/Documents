@@ -74,3 +74,12 @@
 | ช่วยลดภาระในการแก้ไขข้อผิดพลาด          | ต้องออกแบบอินเทอร์เฟซให้เข้าใจง่าย            |
 | รองรับการขยายระบบ และให้ทีมทำงานคู่ขนานได้ | อาจต้องลงทุนเวลาในเอกสารและการสื่อสาร       |
 
+- Artificial Intelligent Agent คืออะไร
+- แนวคิดหลักของ Artificial Intelligent Agent คืออะไร
+- Artificial Intelligent Agent มันมีกี่ประเภทหรือหมวดหมู่ย่อยอะไรบ้าง?
+- การทำงานพื้นฐานของ Artificial Intelligent Agent มันเป็นอย่างไร?
+- มี Artificial Intelligent Agent โมเดลหรือองค์ประกอบสำคัญอะไรบ้างที่ควรรู้จัก?
+
+- ต้องการคำอธิบายเเบบละเอียด
+- ต้องการ mode Example , Project , Teach 
+- ให้เน้น Logic , Creative
