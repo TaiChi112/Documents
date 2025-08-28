@@ -1,3 +1,90 @@
+# Adapter Design Pattern - Mermaid Diagram Samples
+
+Below are 4 different samples of the Adapter Design Pattern using Mermaid diagrams.
+
+---
+
+## Sample 1: Basic Adapter Structure (Class Adapter)
+
+```mermaid
+classDiagram
+    class Target {
+        +request()
+    }
+    class Adapter {
+        +request()
+    }
+    class Adaptee {
+        +specificRequest()
+    }
+    Target <|-- Adapter
+    Adapter <|-- Adaptee
+```
+
+---
+
+## Sample 2: Object Adapter
+
+```mermaid
+classDiagram
+    class Target {
+        +request()
+    }
+    class Adapter {
+        +request()
+        -adaptee: Adaptee
+    }
+    class Adaptee {
+        +specificRequest()
+    }
+    Target <|-- Adapter
+    Adapter o-- Adaptee
+```
+
+---
+
+## Sample 3: Power Plug Adapter Example
+
+```mermaid
+classDiagram
+    class USPlug {
+        +connectUS()
+    }
+    class EUPlug {
+        +connectEU()
+    }
+    class PlugAdapter {
+        +connectUS()
+        -euPlug: EUPlug
+    }
+    USPlug <|-- PlugAdapter
+    PlugAdapter o-- EUPlug
+```
+
+---
+
+## Sample 4: Media Player Adapter Example
+
+```mermaid
+classDiagram
+    class MediaPlayer {
+        +play(audioType, fileName)
+    }
+    class AdvancedMediaPlayer {
+        +playVlc(fileName)
+        +playMp4(fileName)
+    }
+    class AudioPlayer {
+        +play(audioType, fileName)
+    }
+    class MediaAdapter {
+        +play(audioType, fileName)
+        -advancedMusicPlayer: AdvancedMediaPlayer
+    }
+    MediaPlayer <|-- AudioPlayer
+    MediaPlayer <|-- MediaAdapter
+    MediaAdapter o-- AdvancedMediaPlayer
+```
 ```mermaid
 classDiagram
     direction TD
