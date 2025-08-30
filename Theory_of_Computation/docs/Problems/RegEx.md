@@ -1,0 +1,15 @@
+# แนวทางการใช้ Regular Expressions
+- นิยาม Regular Language ด้วย RegEx
+- วิธีการสร้าง State Diagram เเต่ละประเภทจาก RegEx เช่น 
+  - FA
+    - DFA
+    - NFA
+    - ε-NFA
+  - PDA
+    - DPDA
+    - NPDA
+    - ε-PDA
+  - TM
+    - DTM
+    - NTM
+    - ε-TM
