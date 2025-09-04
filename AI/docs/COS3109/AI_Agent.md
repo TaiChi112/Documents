@@ -1,0 +1,16 @@
+## Intelligent Agents
+- Agents and environments
+  - PEAS
+    - P(Performance)
+    - E(Environment)
+    - A(Actuators)
+    - S(Sensors)
+    - **Example**: A self-driving car
+      - P: Safe, Fast, Comfortable trip, legal,cost
+      - E: Roads, Traffic , Customers, Pedestrians
+      - A: Steering, Gas pedal, Brakes, Signal, Horn
+  - The structure of agents
+  - Types of agents
+  - Agent communication
+  - Agent learning
+  - Agent decision-making
