@@ -1,18 +1,35 @@
 ## Transportation Factory Method
 ```mermaid
-classDiagram
+classDiagram 
+    ITransport <.. TransportFactory
+    ITransport <|.. Truck:implements
+    ITransport <|.. Train:implements
+    ITransport <|.. Ship:implements
+    ITransport <|.. Airplane:implements
+    TransportFactory <|-- TruckTransport:extends
+    TransportFactory <|-- TrainTransport:extends
+    TransportFactory <|-- ShipTransport:extends
+    TransportFactory <|-- AirplaneTransport:extends
     class ITransport {
         <<interface>>
         +createTransport() void
         +deliver() void
     }
     class Truck{
+        +createTransport() void
+        +deliver() void
     }
     class Train{
+        +createTransport() void
+        +deliver() void
     }
     class Ship{
+        +createTransport() void
+        +deliver() void
     }
     class Airplane{
+        +createTransport() void
+        +deliver() void
     }
     class TransportFactory {
         <<abstract>>
@@ -30,15 +47,6 @@ classDiagram
     class AirplaneTransport{
         +createTransport() Airplane
     }
-    ITransport <|.. Truck:implements
-    ITransport <|.. Train:implements
-    ITransport <|.. Ship:implements
-    ITransport <|.. Airplane:implements
-    TransportFactory <|-- TruckTransport:extends
-    TransportFactory <|-- TrainTransport:extends
-    TransportFactory <|-- ShipTransport:extends
-    TransportFactory <|-- AirplaneTransport:extends
-    ITransport <.. TransportFactory
 ```
 
 ## Report Generator Factory Method
@@ -76,42 +84,6 @@ classDiagram
     IReport <.. ReportGeneratorFactory
 ```
 
-## Geme Character Creation Factory Method
-```mermaid
-classDiagram
-    class ICharacter {
-        <<interface>>
-        +attack() void
-        +defend() void
-        +useSkill() void
-    }
-    class Warrior {
-    }
-    class Mage {
-    }
-    class Archer {
-    }
-    class CharacterFactory {
-        <<abstract>>
-        +createCharacter() ICharacter
-    }
-    class WarriorFactory {
-        +createCharacter() Warrior
-    }
-    class MageFactory {
-        +createCharacter() Mage
-    }
-    class ArcherFactory {
-        +createCharacter() Archer
-    }
-    ICharacter <|.. Warrior:implements
-    ICharacter <|.. Mage:implements
-    ICharacter <|.. Archer:implements
-    CharacterFactory <|-- WarriorFactory:extends
-    CharacterFactory <|-- MageFactory:extends
-    CharacterFactory <|-- ArcherFactory:extends
-    ICharacter <.. CharacterFactory
-```
 
 ## Payment Gateway Integration Factory Method
 ```mermaid
@@ -209,10 +181,19 @@ classDiagram
         +cancelNotification() void
     }
     class EmailNotificationService {
+        +sendNotification() void
+        +scheduleNotification() void
+        +cancelNotification() void
     }
     class SmsNotificationService {
+        +sendNotification() void
+        +scheduleNotification() void
+        +cancelNotification() void
     }
     class PushNotificationService {
+        +sendNotification() void
+        +scheduleNotification() void
+        +cancelNotification() void
     }
     class NotificationServiceFactory {
         <<abstract>>
@@ -224,7 +205,7 @@ classDiagram
     class SmsNotificationServiceFactory {
         +createNotificationService() SmsNotificationService
     }
-    class PushNotificationServiceFactory {
+    class SomethingNotificationServiceFactory {
         +createNotificationService() PushNotificationService
     }
     INotificationService <|.. EmailNotificationService:implements
@@ -232,7 +213,7 @@ classDiagram
     INotificationService <|.. PushNotificationService:implements
     NotificationServiceFactory <|-- EmailNotificationServiceFactory:extends
     NotificationServiceFactory <|-- SmsNotificationServiceFactory:extends
-    NotificationServiceFactory <|-- PushNotificationServiceFactory:extends
+    NotificationServiceFactory <|-- SomethingNotificationServiceFactory:extends
     INotificationService <.. NotificationServiceFactory
 ```
 
