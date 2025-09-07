@@ -1,0 +1,357 @@
+# AI Search Algorithms
+
+## การค้นหาแบบไม่มีข้อมูล (Uninformed Search) และ การค้นหาแบบมีข้อมูล (Informed Search)
+
+```python
+from collections import deque, defaultdict
+
+# ข้อ 1
+graph = {
+    'S': ['A', 'D'],
+    'A': ['B'],
+    'B': ['C', 'G'],
+    'C': ['G'],
+    'D': ['G'],
+    'G': []
+}
+
+def bfs(start, goal):
+    visited = set()
+    queue = deque([[start]])
+
+    while queue:
+        path = queue.popleft()
+        node = path[-1]
+
+        if node == goal:
+            return path
+
+        if node not in visited:
+            visited.add(node)
+            for neighbor in graph[node]:
+                new_path = list(path)
+                new_path.append(neighbor)
+                queue.append(new_path)
+
+print("BFS Path:", bfs('S', 'G'))
+
+# ข้อ 2
+def dfs(start, goal):
+    stack = [[start]]
+    visited = set()
+
+    while stack:
+        path = stack.pop()
+        node = path[-1]
+
+        if node == goal:
+            return path
+
+        if node not in visited:
+            visited.add(node)
+            for neighbor in reversed(graph[node]):  # reversed for consistency with normal DFS
+                new_path = list(path)
+                new_path.append(neighbor)
+                stack.append(new_path)
+
+print("DFS Path:", dfs('S', 'G'))
+
+# ข้อ 3
+import heapq
+
+graph_cost = {
+    'S': {'A': 1, 'D': 5},
+    'A': {'B': 3},
+    'B': {'C': 1, 'G': 1},
+    'C': {'G': 1},
+    'D': {'G': 1},
+    'G': {}
+}
+
+# heuristic: estimated cost to goal
+heuristic = {
+    'S': 5,
+    'A': 4,
+    'B': 2,
+    'C': 1,
+    'D': 3,
+    'G': 0
+}
+
+def a_star(start, goal):
+    open_set = []
+    heapq.heappush(open_set, (0 + heuristic[start], 0, [start]))
+
+    while open_set:
+        est_total_cost, cost_so_far, path = heapq.heappop(open_set)
+        node = path[-1]
+
+        if node == goal:
+            return path
+
+        for neighbor in graph_cost[node]:
+            new_cost = cost_so_far + graph_cost[node][neighbor]
+            est = new_cost + heuristic[neighbor]
+            new_path = list(path)
+            new_path.append(neighbor)
+            heapq.heappush(open_set, (est, new_cost, new_path))
+
+print("A* Path:", a_star('S', 'G'))
+
+# เพิ่มเติม: Uninformed Search
+
+# ข้อ 4 - Uniform-Cost Search (UCS)
+def uniform_cost_search(start, goal):
+    priority_queue = []
+    heapq.heappush(priority_queue, (0, [start]))  # (cost, path)
+    visited = set()
+
+    while priority_queue:
+        cost, path = heapq.heappop(priority_queue)
+        node = path[-1]
+
+        if node == goal:
+            return path, cost
+
+        if node not in visited:
+            visited.add(node)
+            for neighbor, edge_cost in graph_cost[node].items():
+                new_cost = cost + edge_cost
+                new_path = list(path)
+                new_path.append(neighbor)
+                heapq.heappush(priority_queue, (new_cost, new_path))
+
+path, cost = uniform_cost_search('S', 'G')
+print(f"UCS Path: {path}, Cost: {cost}")
+
+# ข้อ 5 - Depth-Limited Search (DLS)
+def depth_limited_search(start, goal, depth_limit):
+    return recursive_dls(start, goal, [], set(), depth_limit)
+
+def recursive_dls(node, goal, path, visited, limit):
+    path = path + [node]
+    
+    if node == goal:
+        return path
+    
+    if limit == 0:
+        return None
+    
+    visited.add(node)
+    for neighbor in graph[node]:
+        if neighbor not in visited:
+            result = recursive_dls(neighbor, goal, path, visited.copy(), limit - 1)
+            if result is not None:
+                return result
+    
+    return None
+
+print("DLS Path (limit=3):", depth_limited_search('S', 'G', 3))
+
+# ข้อ 6 - Iterative Deepening Search (IDS)
+def iterative_deepening_search(start, goal, max_depth):
+    for depth in range(max_depth + 1):
+        result = depth_limited_search(start, goal, depth)
+        if result is not None:
+            return result, depth
+    return None, max_depth
+
+path, depth = iterative_deepening_search('S', 'G', 5)
+print(f"IDS Path: {path}, Found at depth: {depth}")
+
+# เพิ่มเติม: Informed Search
+
+# ข้อ 7 - Greedy Best-First Search
+def greedy_best_first_search(start, goal):
+    open_set = []
+    heapq.heappush(open_set, (heuristic[start], [start]))  # (heuristic, path)
+    visited = set()
+
+    while open_set:
+        _, path = heapq.heappop(open_set)
+        node = path[-1]
+
+        if node == goal:
+            return path
+
+        if node not in visited:
+            visited.add(node)
+            for neighbor in graph_cost[node]:
+                if neighbor not in visited:
+                    new_path = list(path)
+                    new_path.append(neighbor)
+                    heapq.heappush(open_set, (heuristic[neighbor], new_path))
+
+print("Greedy Best-First Search Path:", greedy_best_first_search('S', 'G'))
+```
+
+## โจทย์ปัญหาเมืองในประเทศไทย
+
+การหาเส้นทางจากกรุงเทพฯ (BKK) ไปเชียงใหม่ (CNX) โดยใช้อัลกอริทึมต่างๆ
+
+```python
+# กราฟเมืองในประเทศไทย
+thai_cities_graph = {
+    'BKK': ['AYT', 'LOP', 'KKN'],  # กรุงเทพฯ
+    'AYT': ['BKK', 'LOP'],         # อยุธยา
+    'LOP': ['BKK', 'AYT', 'PHS'],  # ลพบุรี
+    'PHS': ['LOP', 'KKN', 'LPG'],  # พิษณุโลก
+    'LPG': ['PHS', 'CNX'],         # ลำปาง
+    'KKN': ['BKK', 'PHS', 'UDN'],  # ขอนแก่น
+    'UDN': ['KKN', 'CNX'],         # อุดรธานี
+    'CNX': ['LPG', 'UDN']          # เชียงใหม่
+}
+
+# ระยะทางระหว่างเมือง (กิโลเมตร)
+thai_cities_cost = {
+    'BKK': {'AYT': 80, 'LOP': 120, 'KKN': 450},
+    'AYT': {'BKK': 80, 'LOP': 60},
+    'LOP': {'BKK': 120, 'AYT': 60, 'PHS': 200},
+    'PHS': {'LOP': 200, 'KKN': 300, 'LPG': 150},
+    'LPG': {'PHS': 150, 'CNX': 100},
+    'KKN': {'BKK': 450, 'PHS': 300, 'UDN': 180},
+    'UDN': {'KKN': 180, 'CNX': 400},
+    'CNX': {'LPG': 100, 'UDN': 400}
+}
+
+# ค่าประมาณระยะทางถึงเชียงใหม่ (heuristic)
+thai_cities_heuristic = {
+    'BKK': 600,  # กรุงเทพฯ
+    'AYT': 650,  # อยุธยา
+    'LOP': 580,  # ลพบุรี
+    'PHS': 380,  # พิษณุโลก
+    'LPG': 100,  # ลำปาง
+    'KKN': 520,  # ขอนแก่น
+    'UDN': 400,  # อุดรธานี
+    'CNX': 0     # เชียงใหม่
+}
+
+from collections import deque
+import heapq
+
+# BFS สำหรับเมืองไทย
+def bfs_thai_cities(start, goal):
+    visited = set()
+    queue = deque([[start]])
+
+    while queue:
+        path = queue.popleft()
+        node = path[-1]
+
+        if node == goal:
+            return path
+
+        if node not in visited:
+            visited.add(node)
+            for neighbor in thai_cities_graph[node]:
+                new_path = list(path)
+                new_path.append(neighbor)
+                queue.append(new_path)
+
+# DFS สำหรับเมืองไทย
+def dfs_thai_cities(start, goal):
+    stack = [[start]]
+    visited = set()
+
+    while stack:
+        path = stack.pop()
+        node = path[-1]
+
+        if node == goal:
+            return path
+
+        if node not in visited:
+            visited.add(node)
+            for neighbor in thai_cities_graph[node]:
+                if neighbor not in visited:
+                    new_path = list(path)
+                    new_path.append(neighbor)
+                    stack.append(new_path)
+
+# UCS สำหรับเมืองไทย
+def ucs_thai_cities(start, goal):
+    priority_queue = [(0, [start])]  # (cost, path)
+    visited = set()
+
+    while priority_queue:
+        cost, path = heapq.heappop(priority_queue)
+        node = path[-1]
+
+        if node == goal:
+            return path, cost
+
+        if node not in visited:
+            visited.add(node)
+            for neighbor, edge_cost in thai_cities_cost[node].items():
+                if neighbor not in visited:
+                    new_cost = cost + edge_cost
+                    new_path = list(path)
+                    new_path.append(neighbor)
+                    heapq.heappush(priority_queue, (new_cost, new_path))
+
+# Greedy Best-First Search สำหรับเมืองไทย
+def greedy_thai_cities(start, goal):
+    open_set = [(thai_cities_heuristic[start], [start])]  # (heuristic, path)
+    visited = set()
+
+    while open_set:
+        _, path = heapq.heappop(open_set)
+        node = path[-1]
+
+        if node == goal:
+            return path
+
+        if node not in visited:
+            visited.add(node)
+            for neighbor in thai_cities_cost[node]:
+                if neighbor not in visited:
+                    new_path = list(path)
+                    new_path.append(neighbor)
+                    heapq.heappush(open_set, (thai_cities_heuristic[neighbor], new_path))
+
+# A* สำหรับเมืองไทย
+def astar_thai_cities(start, goal):
+    open_set = []
+    heapq.heappush(open_set, (thai_cities_heuristic[start], 0, [start]))  # (f, g, path)
+    visited = set()
+
+    while open_set:
+        _, g, path = heapq.heappop(open_set)
+        node = path[-1]
+
+        if node == goal:
+            return path, g
+
+        if node not in visited:
+            visited.add(node)
+            for neighbor, cost in thai_cities_cost[node].items():
+                if neighbor not in visited:
+                    new_g = g + cost
+                    new_f = new_g + thai_cities_heuristic[neighbor]
+                    new_path = list(path)
+                    new_path.append(neighbor)
+                    heapq.heappush(open_set, (new_f, new_g, new_path))
+
+# ทดสอบอัลกอริทึมต่างๆ
+bfs_path = bfs_thai_cities('BKK', 'CNX')
+dfs_path = dfs_thai_cities('BKK', 'CNX')
+ucs_path, ucs_cost = ucs_thai_cities('BKK', 'CNX')
+greedy_path = greedy_thai_cities('BKK', 'CNX')
+astar_path, astar_cost = astar_thai_cities('BKK', 'CNX')
+
+print(f"BFS Path: {bfs_path}")
+print(f"DFS Path: {dfs_path}")
+print(f"UCS Path: {ucs_path}, Cost: {ucs_cost}")
+print(f"Greedy Path: {greedy_path}")
+print(f"A* Path: {astar_path}, Cost: {astar_cost}")
+```
+
+## เปรียบเทียบอัลกอริทึม
+
+| อัลกอริทึม | คุณสมบัติ | ข้อดี | ข้อเสีย | เหมาะสมกับ |
+|-----------|---------|------|--------|-----------|
+| BFS | - ตรวจสอบทุกโหนดในระดับความลึกเท่ากัน<br>- ใช้ Queue | - รับประกันเส้นทางสั้นที่สุด (จำนวนขั้นตอน)<br>- รับประกันพบเป้าหมายถ้ามี | - ใช้หน่วยความจำมาก<br>- อาจช้าเมื่อเป้าหมายอยู่ลึก | ปัญหาที่มีจำนวนขั้นตอนน้อย หรือเป้าหมายอยู่ไม่ลึก |
+| DFS | - ตรวจสอบโหนดตามความลึกก่อน<br>- ใช้ Stack | - ใช้หน่วยความจำน้อย<br>- อาจพบเป้าหมายเร็วหากอยู่ลึก | - ไม่รับประกันเส้นทางสั้นที่สุด<br>- อาจติดลูปอนันต์ | ปัญหาที่มีเส้นทางหลายเส้นไปยังเป้าหมาย และต้องการค้นหาเส้นทางใดเส้นทางหนึ่ง |
+| UCS | - ขยายโหนดที่มีต้นทุนน้อยที่สุด<br>- ใช้ Priority Queue | - รับประกันเส้นทางที่มีต้นทุนน้อยที่สุด<br>- รับประกันพบเป้าหมายถ้ามี | - อาจตรวจสอบเส้นทางมากเกินความจำเป็น<br>- ไม่ใช้ข้อมูลเพิ่มเติม | ปัญหาที่มีต้นทุนแตกต่างกัน และต้องการเส้นทางที่มีต้นทุนน้อยที่สุด |
+| Greedy | - เลือกโหนดที่ดูเหมือนจะใกล้เป้าหมายที่สุด<br>- ใช้ Priority Queue + Heuristic | - เร็ว<br>- ใช้หน่วยความจำน้อย | - ไม่รับประกันเส้นทางที่ดีที่สุด<br>- อาจติดกับดักท้องถิ่น | ปัญหาที่ต้องการความเร็วมากกว่าความแม่นยำ |
+| A* | - พิจารณาทั้งต้นทุนที่ใช้แล้วและประมาณต้นทุนที่เหลือ<br>- ใช้ Priority Queue + Heuristic | - มีประสิทธิภาพสูง<br>- รับประกันเส้นทางที่ดีที่สุด (ถ้า heuristic เหมาะสม) | - ต้องมี heuristic ที่ดี<br>- ใช้หน่วยความจำมาก | ปัญหาที่ต้องการเส้นทางที่ดีที่สุดและมี heuristic ที่เหมาะสม |
