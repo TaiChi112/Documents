@@ -64,5 +64,6 @@ fn main() {
     println!("Popped: {:?}", stack.pop());
     println!("Popped: {:?}", stack.pop());
     println!("Popped: {:?}", stack.pop());
+
 }
 
