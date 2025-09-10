@@ -23,3 +23,48 @@
 
 - **Feature**: คุณสมบัติหรือลักษณะเฉพาะของข้อมูลที่ใช้เป็นอินพุตให้กับโมเดล
   - *ตัวอย่าง*: จำนวนห้องนอนและพื้นที่ใช้สอยในการทำนายราคาบ้าน, pixel ในรูปภาพ, คำในเอกสารสำหรับการวิเคราะห์ข้อความ
+
+
+- **supervised learning**
+  - label
+  - training data
+  - regression
+  - classification
+  - speech recognition
+  - Linear Regression
+  - Decision Tree
+  - Random Forest
+  - Support Vector Machine (SVM)
+- **unsupervised learning**
+  - dimensionality reduction
+  - principal component analysis (PCA)
+  - clustering
+  - k-means
+  - hierarchical clustering
+  - anomaly detection
+  - market basket analysis
+  - feature learning
+- **reinforcement learning**
+  - reward
+  - penalty
+  - policy
+  - simulation
+  - Q-learning
+  - SARSA
+  - Deep Q-Network (DQN)
+  - deep reinforcement learning
+  - Accuracy = (TP + TN) / (TP + TN + FP + FN)
+  - Precision = TP / (TP + FP)
+  - Recall = TP / (TP + FN)
+  - F1 Score = 2 * (Precision * Recall) / (Precision + Recall)
+  - Mean Squared Error (MSE) = (1/n) * Σ(actual - predicted)²
+  - Root Mean Squared Error (RMSE) = √MSE
+  - Coefficient of Determination (R²) = 1 - (SS_res / SS_tot)
+  - MSE = (1/n) * Σ(actual - predicted)²
+  - RMSE = √MSE
+  - MAE = (1/n) * Σ|actual - predicted|
+  - R² = 1 - (SS_res / SS_tot)
+  - Sihouette Score = (b - a) / max(a, b)
+  - Davies-Bouldin Index = (1/n) * Σ(max((σ_i + σ_j) / d(c_i, c_j)))
+  - Cumulative Reward = Σ(reward_t)
+  - Average Reward per Episode = (1/N) * Σ(cumulative_reward_i)
