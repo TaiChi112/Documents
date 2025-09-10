@@ -25,57 +25,46 @@
   - *ตัวอย่าง*: จำนวนห้องนอนและพื้นที่ใช้สอยในการทำนายราคาบ้าน, pixel ในรูปภาพ, คำในเอกสารสำหรับการวิเคราะห์ข้อความ
 
 
-## ประเภทของการเรียนรู้ของเครื่อง (Types of Machine Learning)
-
-- **Supervised Learning**: การเรียนรู้แบบมีผู้สอน คือ การเรียนรู้จากข้อมูลที่มีคำตอบ (Label) กำกับไว้แล้ว
-  - **Label**: ผลลัพธ์หรือคำตอบที่ถูกต้องซึ่งใช้ในการสอนโมเดล
-  - **Training Data**: ชุดข้อมูลที่ใช้ในการฝึกสอนโมเดล ประกอบด้วยคู่ของ Input และ Output ที่ถูกต้อง
-  - **Regression**: การทำนายค่าต่อเนื่อง เช่น การทำนายราคาบ้าน, อายุ หรือน้ำหนัก
-  - **Classification**: การจำแนกประเภทหรือหมวดหมู่ เช่น การระบุว่ารูปภาพมีแมวหรือไม่มีแมว
-  - **Speech Recognition**: การรู้จำเสียงพูด คือ การแปลงเสียงพูดเป็นข้อความ
-  - **Linear Regression**: อัลกอริทึมที่สร้างโมเดลความสัมพันธ์เชิงเส้นระหว่างตัวแปรต้นและตัวแปรตาม
-  - **Decision Tree**: โครงสร้างแบบต้นไม้ที่แตกกิ่งตามเงื่อนไขต่างๆ เพื่อช่วยในการตัดสินใจ
-  - **Random Forest**: อัลกอริทึมที่ใช้ Decision Tree หลายต้นแล้วนำผลลัพธ์มาโหวตร่วมกัน
-  - **Support Vector Machine (SVM)**: อัลกอริทึมที่สร้างเส้นแบ่งที่ดีที่สุดระหว่างข้อมูลต่างคลาส
-
-- **Unsupervised Learning**: การเรียนรู้แบบไม่มีผู้สอน คือ การเรียนรู้จากข้อมูลที่ไม่มีคำตอบกำกับ
-  - **Dimensionality Reduction**: การลดมิติของข้อมูล เพื่อลดความซับซ้อนแต่ยังรักษาสารสนเทศสำคัญไว้
-  - **Principal Component Analysis (PCA)**: เทคนิคการลดมิติโดยแปลงข้อมูลให้อยู่บนแกนหลักที่มีความแปรปรวนสูงสุด
-  - **Clustering**: การจัดกลุ่มข้อมูลตามความคล้ายคลึงกัน โดยไม่รู้ล่วงหน้าว่ามีกี่กลุ่ม
-  - **K-means**: อัลกอริทึมแบ่งกลุ่มข้อมูลเป็น k กลุ่ม โดยใช้ระยะทางเป็นเกณฑ์
-  - **Hierarchical Clustering**: การจัดกลุ่มแบบลำดับชั้น ที่แสดงความสัมพันธ์ระหว่างกลุ่มเป็นแผนภาพต้นไม้
-  - **Anomaly Detection**: การตรวจหาข้อมูลผิดปกติที่ต่างจากข้อมูลส่วนใหญ่
-  - **Market Basket Analysis**: การวิเคราะห์ตะกร้าสินค้า เพื่อหาความสัมพันธ์ของสินค้าที่ถูกซื้อร่วมกัน
-  - **Feature Learning**: การเรียนรู้คุณลักษณะ คือ การให้โมเดลเรียนรู้การสกัดคุณลักษณะที่สำคัญเอง
-
-- **Reinforcement Learning**: การเรียนรู้แบบเสริมแรง คือ การเรียนรู้โดยการลองผิดลองถูกและได้รับรางวัลหรือบทลงโทษ
-  - **Reward**: รางวัลหรือผลตอบแทนเมื่อตัวแทนทำการกระทำที่ถูกต้อง
-  - **Penalty**: บทลงโทษเมื่อตัวแทนทำการกระทำที่ไม่ถูกต้อง
-  - **Policy**: นโยบายหรือกลยุทธ์ที่ตัวแทนใช้ตัดสินใจเลือกการกระทำในแต่ละสถานการณ์
-  - **Simulation**: การจำลองสภาพแวดล้อมเพื่อให้ตัวแทนได้ฝึกฝนโดยไม่ต้องเสี่ยงในโลกจริง
-  - **Q-learning**: อัลกอริทึมการเรียนรู้แบบเสริมแรงที่เรียนรู้ค่า Q ซึ่งเป็นคุณค่าของการกระทำในแต่ละสถานะ
-  - **SARSA**: อัลกอริทึมการเรียนรู้แบบเสริมแรงที่ใช้ State, Action, Reward, State, Action ในการอัปเดตนโยบาย
-  - **Deep Q-Network (DQN)**: การผสมผสานเครือข่ายประสาทเทียมเข้ากับ Q-learning เพื่อจัดการกับพื้นที่สถานะขนาดใหญ่
-  - **Deep Reinforcement Learning**: การใช้เครือข่ายประสาทเทียมแบบลึกในการเรียนรู้แบบเสริมแรง
-
-## การวัดประสิทธิภาพโมเดล (Model Evaluation Metrics)
-
-### สำหรับ Classification
-- **Accuracy = (TP + TN) / (TP + TN + FP + FN)**: สัดส่วนของการทำนายที่ถูกต้องทั้งหมดต่อจำนวนข้อมูลทั้งหมด
-- **Precision = TP / (TP + FP)**: สัดส่วนของการทำนายเป็นบวกที่ถูกต้องต่อการทำนายเป็นบวกทั้งหมด (ความแม่นยำ)
-- **Recall = TP / (TP + FN)**: สัดส่วนของการทำนายเป็นบวกที่ถูกต้องต่อจำนวนข้อมูลบวกทั้งหมด (ความไว)
-- **F1 Score = 2 * (Precision * Recall) / (Precision + Recall)**: ค่าเฉลี่ยฮาร์โมนิกของ Precision และ Recall
-
-### สำหรับ Regression
-- **Mean Squared Error (MSE) = (1/n) * Σ(actual - predicted)²**: ค่าเฉลี่ยของกำลังสองของความคลาดเคลื่อน
-- **Root Mean Squared Error (RMSE) = √MSE**: รากที่สองของ MSE ใช้วัดความคลาดเคลื่อนในหน่วยเดียวกับข้อมูล
-- **Mean Absolute Error (MAE) = (1/n) * Σ|actual - predicted|**: ค่าเฉลี่ยของค่าสัมบูรณ์ของความคลาดเคลื่อน
-- **Coefficient of Determination (R²) = 1 - (SS_res / SS_tot)**: สัดส่วนของความแปรปรวนที่อธิบายได้ด้วยโมเดล
-
-### สำหรับ Clustering
-- **Silhouette Score = (b - a) / max(a, b)**: วัดว่าวัตถุอยู่ในคลัสเตอร์ที่เหมาะสมหรือไม่ โดย a คือระยะห่างภายในคลัสเตอร์ และ b คือระยะห่างระหว่างคลัสเตอร์
-- **Davies-Bouldin Index = (1/n) * Σ(max((σ_i + σ_j) / d(c_i, c_j)))**: ดัชนีวัดคุณภาพของการแบ่งกลุ่ม ค่ายิ่งต่ำยิ่งดี
-
-### สำหรับ Reinforcement Learning
-- **Cumulative Reward = Σ(reward_t)**: ผลรวมของรางวัลที่ได้รับทั้งหมดในหนึ่งเอพิโซด
-- **Average Reward per Episode = (1/N) * Σ(cumulative_reward_i)**: ค่าเฉลี่ยของรางวัลสะสมต่อเอพิโซด
+- **supervised learning**
+  - label
+  - training data
+  - regression
+  - classification
+  - speech recognition
+  - Linear Regression
+  - Decision Tree
+  - Random Forest
+  - Support Vector Machine (SVM)
+- **unsupervised learning**
+  - dimensionality reduction
+  - principal component analysis (PCA)
+  - clustering
+  - k-means
+  - hierarchical clustering
+  - anomaly detection
+  - market basket analysis
+  - feature learning
+- **reinforcement learning**
+  - reward
+  - penalty
+  - policy
+  - simulation
+  - Q-learning
+  - SARSA
+  - Deep Q-Network (DQN)
+  - deep reinforcement learning
+  - Accuracy = (TP + TN) / (TP + TN + FP + FN)
+  - Precision = TP / (TP + FP)
+  - Recall = TP / (TP + FN)
+  - F1 Score = 2 * (Precision * Recall) / (Precision + Recall)
+  - Mean Squared Error (MSE) = (1/n) * Σ(actual - predicted)²
+  - Root Mean Squared Error (RMSE) = √MSE
+  - Coefficient of Determination (R²) = 1 - (SS_res / SS_tot)
+  - MSE = (1/n) * Σ(actual - predicted)²
+  - RMSE = √MSE
+  - MAE = (1/n) * Σ|actual - predicted|
+  - R² = 1 - (SS_res / SS_tot)
+  - Sihouette Score = (b - a) / max(a, b)
+  - Davies-Bouldin Index = (1/n) * Σ(max((σ_i + σ_j) / d(c_i, c_j)))
+  - Cumulative Reward = Σ(reward_t)
+  - Average Reward per Episode = (1/N) * Σ(cumulative_reward_i)
