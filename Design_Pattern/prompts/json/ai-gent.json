@@ -1,0 +1,90 @@
+{
+  "allow_inference": true,
+  "product_requirement_prompt": {
+    "execution_mode": {
+      "description": "Act as a code generator. Write files directly to the repository, do not reply with prose."
+    },
+    "goal": {
+      "description": "Create a minimal, runnable example to demonstrate a design pattern.",
+      "variables": {
+        "pattern_name": "<PatternName>",
+        "language_or_stack": "<Language/Stack>"
+      }
+    },
+    "scope": {
+      "in_scope": "Small domain <Domain> with 1–2 use cases",
+      "out_of_scope": "Full app, database, UI"
+    },
+    "pattern_rationale": {
+      "why_fit": "<Explain why the chosen pattern fits this problem>",
+      "trade_offs": {
+        "pros": ["<Advantage 1>", "<Advantage 2>"],
+        "cons": ["<Disadvantage 1>", "<Disadvantage 2>"]
+      }
+    },
+    "target_use_case": {
+      "actors": ["<Actor1>", "<Actor2>"],
+      "scenario": "<Describe scenario>",
+      "constraints": ["<Constraint 1>", "<Constraint 2>"]
+    },
+    "design": {
+      "diagram_types": ["mermaid_class_diagram", "mermaid_sequence_diagram"],
+      "interfaces_must_be_stable": true
+    },
+    "output_spec": {
+      "docs": {
+        "path": "docs/diagram.md",
+        "content": "Mermaid diagrams only"
+      },
+      "source_code": {
+        "path": "src/",
+        "description": "Minimal runnable code with comments explaining the pattern"
+      },
+      "tests": {
+        "path": "tests/",
+        "description": "Unit tests or scripts verifying behavior"
+      },
+      "readme": {
+        "path": "README.md",
+        "description": "How to run, how the pattern works, trade-offs"
+      },
+      "file_constraints": {
+        "max_lines_per_file": 120
+      }
+    },
+    "acceptance_criteria": [
+      "Build runs without errors",
+      "Tests or demo script produce the exact outputs listed in Section 9"
+    ],
+    "implementation_notes": {
+      "coding_style": "<language-guidelines>",
+      "external_libraries": "None unless explicitly stated",
+      "concurrency": "Demonstrate thread-safety clearly if used"
+    },
+    "golden_output": {
+      "example_commands": ["<command to run project>"],
+      "expected_console_output": [
+        "<line 1 of output>",
+        "<line 2 of output>"
+      ]
+    },
+    "tests": {
+      "format": "Given-When-Then",
+      "examples": [
+        {
+          "given": "<Initial state>",
+          "when": "<Action performed>",
+          "then": "<Expected outcome>"
+        }
+      ]
+    },
+    "risks_and_future_work": {
+      "technical_debt": "<Identify potential technical debt>",
+      "edge_cases": "<Identify important edge cases>",
+      "extensibility": "<Identify opportunities for future extensibility>"
+    },
+    "generate_now": {
+      "instructions": "Create all files according to Output Spec. Do not include explanations outside of these files."
+    }
+  }
+}

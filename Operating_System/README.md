@@ -1,3 +1,25 @@
+```sh
+wsl --shutdown
+```
+```sh
+wsl --update
+```
+```sh
+dism /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+```
+```sh
+dism /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+```
+```sh
+wsl --set-default-version 2
+```
+```sh
+wsl --export <Distro> D:\backup\<Distro>.tar
+```
+```sh
+wsl --import <NewName> D:\WSL\New <Distro>.tar --version 2
+```
+
 ## WSL
 The error code 
 **Wsl/Service/CreateInstance/CreateVm/HCS/HCS_E_SERVICE_NOT_AVAILABLE** indicates that a required Windows feature for running WSL 2 virtual machines is not installed or properly configured. This often relates to the underlying virtualization components that WSL 2 relies on.
