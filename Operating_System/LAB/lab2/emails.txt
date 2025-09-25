@@ -1,3 +1,0 @@
-ID|Email|Subject|Body|Category|Sent
-1|user@example.com|Daily Newsletter|Hello,\nThis is your daily newsletter...|Work|Yes
-2|user2@example.com|Hello WOrlddddd|My name is TaiChi112|Work|No
