@@ -16,9 +16,9 @@ graph TD
     F --> G[📤 Push to GitHub]
     G --> H[👥 Peer Code Review]
     H --> I[💬 Provide Feedback]
-    I --> J[🔍 Report Issues if Found]
-    J --> K[🔀 Merge Pull Requests]
-    K --> L[📝 Write Reflection Summary]
+    %% I --> J[🔍 Report Issues if Found]
+    %% J --> K[🔀 Merge Pull Requests]
+    I --> L[📝 Write Reflection Summary]
     L --> M[✅ Activity Complete]
 ```
 
