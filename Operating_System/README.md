@@ -12,7 +12,6 @@
 
 ---
 
-## 🇺🇸 English (Default)
 **Operating System Study Guide & WSL Troubleshooting**
 
 Comprehensive guide covering WSL troubleshooting, benefits/drawbacks, and complete Operating System study topics for self-learning.
@@ -27,7 +26,6 @@ Comprehensive guide covering WSL troubleshooting, benefits/drawbacks, and comple
 
 ---
 
-## 🇹🇭 ภาษาไทย (Thai)
 **คู่มือการศึกษาระบบปฏิบัติการ & การแก้ปัญหา WSL**
 
 คู่มือครบครันสำหรับการแก้ปัญหา WSL, ข้อดี-ข้อเสีย, และหัวข้อการศึกษาระบบปฏิบัติการสำหรับการเรียนรู้ด้วยตนเอง
