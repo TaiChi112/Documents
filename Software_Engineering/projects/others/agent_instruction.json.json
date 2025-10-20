@@ -1,0 +1,5 @@
+{
+  "allow_inference": true,
+  "agent_instruction": "Always prioritize backend-first development for a course recommendation MVP. Understand context from .copilot-instructions.md. Assume students have constraints and generate solutions accordingly.",
+  "context_file": "./prompts/project_overview.md"
+}
