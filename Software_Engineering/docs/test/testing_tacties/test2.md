@@ -1,0 +1,15 @@
+## Software Testing Techniques
+- Testability
+  - Operability
+  - Observability
+  - Controllability
+  - Decomposability
+  - Simplicity
+  - Stability
+  - Understandability
+- What is a "Good" Test?
+  - High Probability of Finding an Error
+  - Not Redundant
+  - Best of Breed
+  - Balanced
+  - Maintainable
