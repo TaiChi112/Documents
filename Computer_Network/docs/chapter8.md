@@ -1,0 +1,19 @@
+# Computer Network
+- [ ] Chapter 8 Security in Computer Networks
+  - [ ] Chapter goal:
+    - [ ] understand principles of network security:
+        - [ ] cryptography and its many uses beyond "confidentiality"
+        - [ ] authentication
+        - [ ] message integrity
+    - [ ] security in practice:
+        - [ ] firewalls and intrusion detection systems
+        - [ ] security in application, transport, network, link layers
+- [ ] Chapter 8 outline
+  - [ ] What is network security?
+  - [ ] Principles of cryptography
+  - [ ] Message integrity, authentication
+  - [ ] Security e-mail
+  - [ ] Security TCP connections: TLS
+  - [ ] Network layer security: IPsec
+  - [ ] Security in wireless and mobile networks
+  - [ ] Operational security: firewalls and IDSs
