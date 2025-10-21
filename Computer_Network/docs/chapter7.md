@@ -1,0 +1,22 @@
+# Computer Network
+- [ ] Chapter 7 Wireless and Mobile Networks
+  - [ ] Wireless and mobile networks: our goal
+    - [ ] more wireless (mobile) phone subscribers than fixed (wired) phone subscribers (10-to-1 in 2019)!
+    - [ ] more mobile-broadband-connected devices than fixed-broadband-connected devices (5-1 in 2019)!
+    - [ ] 4G/5G cellular networks now embracing Internet protocol stack, including SDN
+
+    - [ ] two important (but different) challenges
+    - [ ] wireless: communication over wireless link
+    - [ ] mobility: handling the mobile user who changes point of attachment to network
+- [ ] chapter 7 outline
+  - [ ] introduction
+  - [ ] wireless 
+    - [ ] Wireless Links and network characteristics
+    - [ ] WiFi: 802.11 wireless LANs
+    - [ ] Cellular networks: 4G and 5G
+  - [ ] Mobility
+    - [ ] Mobility management: principles
+    - [ ] Mobility management: practice
+      - [ ] 4G/5G networks
+      - [ ] Mobile IP
+    - [ ] Mobility: impact on higher-layer protocols

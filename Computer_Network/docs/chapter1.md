@@ -1,0 +1,23 @@
+# Computer Network
+- [ ] Chapter 1: Introduction to Computer Networks
+  - [ ] Chapter goal:
+  - [ ] Overview/roadmap
+  - [ ] What is the Internet?
+  - [ ] What is a protocol?
+  - [ ] Network edge:
+    - [ ] hosts
+    - [ ] access networks
+    - [ ] physical media
+  - [ ] Network core:
+    - [ ] packet switching
+    - [ ] circuit switching
+    - [ ] internet structure
+  - [ ] Performance:
+    - [ ] loss
+    - [ ] delay
+    - [ ] throughput
+  - [ ] Protocol layers
+  - [ ] Service models
+  - [ ] Security
+  - [ ] History of computer networks
+  - [ ] Key events in the history of computer networks

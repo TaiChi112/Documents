@@ -1,0 +1,12 @@
+# Computer Network
+- [ ] Chapter 4 Network Layer:Data Plane
+  - [ ] understand principles behind network layer services,focusing on data plane:
+    - [ ] network layer service models
+    - [ ] forwarding versus routing
+    - [ ] how a router works
+    - [ ] addressing
+    - [ ] generalized forwarding
+    - [ ] internet architecture
+  - [ ] instanriation,implementation in the internet
+    - [ ] IP protocol
+    - [ ] NAT, middleboxes

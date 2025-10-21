@@ -1,0 +1,12 @@
+# Computer Network
+- [ ] Chapter 5 Network Layer:Control Plane
+  - [ ] Network layer control plane: our goal 
+    - [ ] understand principles behind network control plane:
+        - [ ] traditional routing algorithms
+        - [ ] SDN controllers
+        - [ ] network management, configuration
+    - [ ] instantiation, implementation in the internet:
+        - [ ] OSPF, BGP
+        - [ ] OpenFlow, ODL and ONOS controllers
+        - [ ] Internet Control Message Protocol (ICMP)
+        - [ ] SNMP, YANG/NETCONF

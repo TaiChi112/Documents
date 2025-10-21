@@ -1,0 +1,36 @@
+# Computer Network
+- [ ] Chapter 2: Application Layer
+- [ ] Principles of network applications
+- [ ] Web and HTTP
+- [ ] E-mail,SMTP,IMAP
+- [ ] The Domain Name System (DNS)
+- [ ] P2P applications
+- [ ] video streaming and content distribution networks
+- [ ] socket programming with TCP and UDP
+  - [ ] Chapter goal:
+  - [ ] Principles of network applications
+  - [ ] Client-server model
+  - [ ] Peer-to-peer model
+  - [ ] Application layer protocols
+  - [ ] Web and HTTP
+    - [ ] Overview of how the web works
+    - [ ] HTTP request and response messages
+    - [ ] Statelessness of HTTP
+    - [ ] Cookies and sessions
+  - [ ] File Transfer: FTP
+    - [ ] Overview of FTP
+    - [ ] Control and data connections
+    - [ ] Active vs. passive mode
+  - [ ] Email: SMTP, POP3, IMAP
+    - [ ] Overview of email architecture
+    - [ ] SMTP for sending email
+    - [ ] POP3 and IMAP for receiving email
+  - [ ] DNS: The Internet's Directory Service
+    - [ ] Overview of DNS
+    - [ ] DNS hierarchy and structure
+    - [ ] DNS resolution process
+    - [ ] Caching in DNS
+  - [ ] Multimedia Applications: Streaming, VoIP
+    - [ ] Overview of multimedia applications
+    - [ ] Streaming protocols (e.g., RTP, RTSP)
+    - [ ] Voice over IP (VoIP) basics

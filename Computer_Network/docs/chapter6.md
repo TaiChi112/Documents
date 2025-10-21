@@ -1,0 +1,12 @@
+# Computer Network
+- [ ] Chapter 6 The Link Layer and LANs
+  - [ ] Link layer and LANs: our goal
+    - [ ] understand principles behind link layer services:
+        - [ ] error detection, correction
+        - [ ] sharing a broadcast channel:
+            - [ ] multiple access
+            - [ ] link layer addressing
+            - [ ] local area networks (LANs):
+            - [ ] Ethernet, WiFi
+    - [ ] datacenter network
+    - [ ] instantiation, implementation of various link layer technologies

@@ -1,0 +1,20 @@
+# Computer Network
+- [ ] Chapter 3: Transport Layer
+- [ ] Chapter goal:
+  - [ ] understand principles behind transport layer services:
+    - [ ] multiplexing/demultiplexing
+    - [ ] reliable data transfer
+    - [ ] flow control
+    - [ ] congestion control
+  - [ ] learn about internet transport protocols:
+    - [ ] UDP: connectionless transport
+    - [ ] TCP: connection-oriented reliable transport
+    - [ ] TCP congestion control
+  - [ ] Transport layer:roadmap
+    - [ ] Transport layer services
+    - [ ] Multiplexing and demultiplexing
+    - [ ] Connectionless transport: UDP
+    - [ ] Principles of reliable data transfer
+    - [ ] Connection-oriented transport: TCP
+    - [ ] TCP congestion control
+    - [ ] Evolution of transport-layer functionality
