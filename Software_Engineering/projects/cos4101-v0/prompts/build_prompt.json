@@ -1,0 +1,21 @@
+{
+  "allow_inference": true,
+  "project_goal": "Build an MVP web application that recommends personalized course registration plans for university students based on life constraints, prior knowledge, and preferences.",
+  "context_file": "./prompts/project_context.md",
+  "tech_stack": {
+    "runtime": "bun",
+    "frontend": "Next.js + TypeScript",
+    "backend": "Elysia + TypeScript",
+    "database": "PostgreSQL + Prisma",
+    "infra": "Docker + Docker Compose"
+  },
+  "mvp_features": [
+    "User registration and login",
+    "Profile form for constraints and preferences",
+    "Rule-based recommendation system",
+    "Statistics overview",
+    "Personalized dashboard"
+  ],
+  "dev_focus": "Prioritize backend API and database schema first. Keep frontend minimal for testing.",
+  "expected_behavior": "All services run via Docker Compose. API must return recommendations with explanations. Flow: register -> login -> profile -> generate plan -> view stats."
+}
