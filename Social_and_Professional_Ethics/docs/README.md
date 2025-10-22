@@ -1,7 +1,7 @@
 ## 4 Soft Skills Development through LeetCode Collaborative Problem-Solving Activity
 - ของกลุ่ม AF
 - จำทำโดย: 
-  - อโณทัย วิชาไพบูลย์ (6505501038)
+  - ฮิซาม ดามาละ  (6505001948) 
   - อโณทัย วิชาไพบูลย์ (6505501038)
 - เสนอ
   - ผศ.ดร.สาธิษฐ์ นากกระเเสร์
