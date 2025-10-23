@@ -1,0 +1,1 @@
+- program อยู่ใน disk ถูก loader เขาไปยัง main memory กลายเป็น process ซึ่งใน 1 program สามารถมีได้หลาย process ได้ (เช่น การเปิด browser ขึ้นมา 2 หน้าต่าง จะมี 2 process)
