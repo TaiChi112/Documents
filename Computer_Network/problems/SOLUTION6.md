@@ -86,7 +86,7 @@ graph TB
 ### 6.1.2 การจัดสรร IP Address Range
 
 ```mermaid
-graph TB
+graph LR
     subgraph "การจัดสรร IP Address Ranges"
         R1["192.168.0.0/25<br/>HQ Network<br/>192.168.0.1 - 192.168.0.126<br/>Broadcast: 192.168.0.127"]
         R2["192.168.0.128/26<br/>สาขา A Network<br/>192.168.0.129 - 192.168.0.190<br/>Broadcast: 192.168.0.191"]
