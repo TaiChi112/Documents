@@ -12,7 +12,7 @@
 #### ความต้องการของแต่ละหน่วยงาน:
 
 ```mermaid
-graph TB
+graph LR
     subgraph "ความต้องการ IP Address"
         HQ["สำนักงานใหญ่ (HQ)<br/>ต้องการ 100 IP"]
         BA["สาขา A<br/>ต้องการ 50 IP"]
@@ -53,7 +53,7 @@ graph TB
 สูตร: 2^n - 2 ≥ จำนวน hosts ที่ต้องการ (โดย n = จำนวน host bits)
 
 ```mermaid
-graph TB
+graph LR
     subgraph "การคำนวณ Host Bits"
         C1["HQ: 100 hosts<br/>2^7 = 128 ≥ 100<br/>ต้องการ 7 host bits"]
         C2["สาขา A: 50 hosts<br/>2^6 = 64 ≥ 50<br/>ต้องการ 6 host bits"]
@@ -125,7 +125,7 @@ graph LR
 ### 6.2 Network Topology และการออกแบบ
 
 ```mermaid
-graph TB
+graph LR
     subgraph "TechGlobal Company Network Topology"
         subgraph "HQ - สำนักงานใหญ่"
             HQR["HQ-Router<br/>192.168.0.1/25<br/>192.168.0.241/30<br/>192.168.0.245/30<br/>192.168.0.249/30"]
@@ -454,7 +454,7 @@ C-Router#copy running-config startup-config
 #### 6.3.4 การกำหนดค่า Static Routes
 
 ```mermaid
-graph TB
+graph LR
     subgraph "Static Routes Configuration"
         subgraph "HQ-Router Routes"
             HQR1["ip route 192.168.0.128 255.255.255.192 192.168.0.242"]
@@ -580,7 +580,7 @@ C    192.168.0.248/30 is directly connected, Serial0/1/0
 #### 6.4.1 แผนการทดสอบ
 
 ```mermaid
-graph TB
+graph LR
     subgraph "การทดสอบ Connectivity"
         T1["Test 1: Local connectivity<br/>PC ping ไปยัง Gateway"]
         T2["Test 2: Inter-branch connectivity<br/>PC ping ข้าม branch"]
@@ -690,7 +690,7 @@ Trace complete.
 #### 6.5.1 ปัญหาที่พบบ่อยและวิธีแก้ไข
 
 ```mermaid
-flowchart TD
+flowchart LR
     P[ปัญหาที่อาจเกิดขึ้น] --> P1[Interface Down]
     P --> P2[IP Configuration ผิด]
     P --> P3[Routing ไม่ถูกต้อง]
@@ -749,7 +749,7 @@ C:\>tracert [destination-ip]
 ### 6.6 การขยายเครือข่ายในอนาคต
 
 ```mermaid
-graph TB
+graph LR
     subgraph "Future Expansion Plan"
         F1["IP Address Pool ที่เหลือ:<br/>192.168.0.252/30<br/>(4 addresses)"]
         F2["การขยายแต่ละสาขา:<br/>- เพิ่ม subnet ใหม่<br/>- ใช้ secondary IP<br/>- อัพเกรดเป็น /23"]
