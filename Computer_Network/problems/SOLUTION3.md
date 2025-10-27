@@ -156,7 +156,7 @@ graph TB
 ### 3.1.2 การส่งสัญญาณโทรทัศน์ผ่านดาวเทียม
 
 ```mermaid
-graph TB
+graph LR
     subgraph "Satellite TV Transmission"
         subgraph "Broadcasting Center"
             B1[Content Source]
