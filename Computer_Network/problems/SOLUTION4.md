@@ -709,12 +709,6 @@ graph TB
             M3[SIEM]
         end
     end
-    
-    style FW fill:#e63946
-    style IPS fill:#e63946
-    style WAF fill:#e63946
-    style E2 fill:#457b9d
-    style M1 fill:#1d3557
 ```
 
 **มาตรการรักษาความปลอดภัยหลัก:**
