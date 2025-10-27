@@ -52,7 +52,7 @@ flowchart LR
 #### ความสัมพันธ์ระหว่างองค์ประกอบ:
 
 ```mermaid
-graph TB
+graph LR
     subgraph "กระบวนการสื่อสารข้อมูล"
         S[ข้อมูลต้นทาง<br/>Data] --> E[การเข้ารหัส<br/>Encoding]
         E --> M[การปรับสัญญาณ<br/>Modulation]
@@ -75,7 +75,7 @@ graph TB
 #### สถานการณ์ที่ 1: การส่งข้อมูลระหว่างดาวเทียมกับสถานีภาคพื้นดิน
 
 ```mermaid
-flowchart TB
+flowchart LR
     subgraph Space["อวกาศ"]
         SAT[ดาวเทียม<br/>Satellite]
     end
