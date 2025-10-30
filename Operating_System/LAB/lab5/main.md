@@ -20,9 +20,9 @@ gantt
     axisFormat %S
     section CPU
     P1 :0, 10
-    P2 :10, 2
-    P3 :12, 3
-    P4 :15, 6
+    P2 :10, 12
+    P3 :12, 15
+    P4 :15, 21
 ```
   
 2. จากตาราง Process ดังต่อไปนี้ จงเขียน Gantt Chart โดยใช้ CPU Scheduling แบบ Shortest-Job-First (SJF)
@@ -44,9 +44,9 @@ gantt
     axisFormat %S
     section CPU
     P2 :0, 2
-    P3 :2, 3
-    P4 :5, 6
-    P1 :11, 10
+    P3 :2, 5
+    P4 :5, 11
+    P1 :11, 21
 ```
 
 3. จากตาราง Process ดังต่อไปนี้ จงเขียน Gantt Chart โดยใช้ CPU Scheduling แบบ Shortest-Job-First (SJF)
@@ -71,9 +71,9 @@ gantt
     axisFormat %S
     section CPU
     P1 :0, 3
-    P2 :3, 5
-    P4 :8, 2
-    P3 :10, 7
+    P2 :3, 8
+    P4 :8, 10
+    P3 :10, 17
 ```
 
 4. จากตาราง Process ดังต่อไปนี้ จงเขียน Gantt Chart โดยใช้ CPU Scheduling แบบ Shortest Remaining Time First (SRTF) 
@@ -99,8 +99,9 @@ gantt
     section CPU
     P1 :0, 3
     P2 :3, 5
-    P4 :8, 2
-    P3 :10, 7
+    P4 :5, 7
+    p2 :7,10
+    P3 :10, 17
 ```
 
 5. จากตาราง Process ดังต่อไปนี้ จงเขียน Gantt Chart โดยใช้ CPU Scheduling แบบ Round Robin โดยมีเวลา quantum เท่ากับ 3 หน่วยเวลา
@@ -127,11 +128,11 @@ gantt
     axisFormat %S
     section CPU
     P1 :0, 3
-    P2 (First) :3, 3
-    P3 (First) :6, 3
-    P4 :9, 2
-    P2 (Second) :11, 2
-    P3 (Second) :13, 4
+    P2 :3, 6
+    P3 :6, 9
+    P4 :9, 11
+    P2 :11, 13
+    P3 :13, 17
 ```
 
 ในแต่ละ scheduling algorithm จะมีข้อดีและข้อเสียต่างกัน:
