@@ -16,8 +16,7 @@
     - [ ] loss
     - [ ] delay
     - [ ] throughput
-  - [ ] Protocol layers
-  - [ ] Service models
   - [ ] Security
+  - [ ] Protocol layers , Service models
   - [ ] History of computer networks
   - [ ] Key events in the history of computer networks
