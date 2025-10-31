@@ -72,6 +72,7 @@ $$
 $$
 b_0^{(t+1)} = b_0^{(t)} - \alpha \frac{\partial SSE}{\partial b_0}
 $$
+
 $$
 b_1^{(t+1)} = b_1^{(t)} - \alpha \frac{\partial SSE}{\partial b_1}
 $$
