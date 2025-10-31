@@ -43,6 +43,7 @@ y = f(z)
 $$
 
 เช่น หากใช้ **Sigmoid Function**  
+
 $$
 σ(x) = \frac{1}{1 + e^{-x}}
 $$
@@ -144,6 +145,7 @@ $$
 ### ✅ ฟังก์ชันวัดค่าผิดพลาด (Loss Function)
 
 กรณี Binary Classification ใช้:
+
 $$
 L = \frac{1}{2}(y - \hat{y})^2
 $$
