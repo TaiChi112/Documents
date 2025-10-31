@@ -62,11 +62,13 @@ $$
 ---
 
 ### 6. Gradient Descent
+
 $$
 \theta \leftarrow \theta - \alpha \nabla f(\theta)
 $$
 
 กรณี Linear Regression:
+
 $$
 b_0^{(t+1)} = b_0^{(t)} - \alpha \frac{\partial SSE}{\partial b_0}
 $$
@@ -95,6 +97,7 @@ $$
 ### ✅ ขั้นตอนการคำนวณ
 
 1. **หาค่าเฉลี่ย**
+
 $$
 \bar{x} = 3, \quad \bar{y} = 4
 $$
@@ -158,36 +161,45 @@ $$
 ### ✅ ขั้นตอนละเอียด
 
 1. **สมการฟังก์ชันค่าเสียหาย (SSE):**
+
 $$
 SSE(b_0,b_1) = \sum (y_i - (b_0 + b_1x_i))^2
 $$
 
 2. **คำนวณ Gradient:**
+
 $$
 \frac{\partial SSE}{\partial b_0} = -2\sum (y_i - b_0 - b_1x_i)
 $$
+
 $$
 \frac{\partial SSE}{\partial b_1} = -2\sum x_i(y_i - b_0 - b_1x_i)
 $$
 
 3. **เมื่อเริ่มต้น: $b_0^{(0)}=0$, $b_1^{(0)}=0$**
+
 $$
 \sum y_i = 20, \quad \sum x_iy_i = 66
 $$
+
 ดังนั้น
+
 $$
 \nabla b_0 = -\frac{2}{5}(20) = -8, \quad \nabla b_1 = -\frac{2}{5}(66) = -26.4
 $$
 
 4. **อัปเดตพารามิเตอร์**
+
 $$
 b_0^{(1)} = 0 - 0.05(-8) = 0.4
 $$
+
 $$
 b_1^{(1)} = 0 - 0.05(-26.4) = 1.32
 $$
 
 5. **สมการใหม่หลังรอบที่ 1**
+
 $$
 \hat{y} = 0.4 + 1.32x
 $$
